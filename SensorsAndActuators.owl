@@ -1,0 +1,747 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/"
+     xml:base="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/">
+        <owl:imports rdf:resource="https://dahcc.idlab.ugent.be/Ontology/Sensors/"/>
+        <owl:imports rdf:resource="https://saref.etsi.org/core/v3.1.1/"/>
+        <owl:imports rdf:resource="https://saref.etsi.org/saref4bldg/v1.1.2/"/>
+        <dc:creator>Bram Steenwinckel, Mathias De Brouwer, Femke Ongenae</dc:creator>
+        <dc:publisher>IDLab - imec - Ghent University</dc:publisher>
+        <rdfs:comment>This ontology describes the different concepts used within the DAHCC ontology to link static sensors and actuators to their corresponding properties and locations.
+
+This ontology uses both the saref core and saref4building ontologies as upper ontologies to define most of the concepts and adds additional classes and object properties to differentiate within the digital health space.</rdfs:comment>
+        <rdfs:label>The DAHCC Sensors and Actuators Ontology</rdfs:label>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+
+
+
+    <!-- http://www.w3.org/ns/prov#hadPrimarySource -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#hadPrimarySource"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/Sensors/isRelevantTo -->
+
+    <rdf:Description rdf:about="https://dahcc.idlab.ugent.be/Ontology/Sensors/isRelevantTo">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://dahcc.idlab.ugent.be/Ontology/Sensors/analyseStateOf"/>
+            <rdf:Description rdf:about="https://saref.etsi.org/saref4bldg/isContainedIn"/>
+        </owl:propertyChainAxiom>
+    </rdf:Description>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/isLocatedNear -->
+
+    <owl:ObjectProperty rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/isLocatedNear"/>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/stateAnalysedBy -->
+
+    <owl:ObjectProperty rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/stateAnalysedBy"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/AtmosphericPressure -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/AtmosphericPressure">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Pressure"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BathRoom -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BathRoom">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BedRoom -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BedRoom">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Blind -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Blind">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BrownGoods -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BrownGoods">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Appliance"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Button -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Button">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/CO2 -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/CO2">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/CO2Sensor -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/CO2Sensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/CoffeeMaker -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/CoffeeMaker">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BrownGoods"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Computer -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Computer">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BrownGoods"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/ContactSensor -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/ContactSensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/DeepFreezer -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/DeepFreezer">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Dimmer -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Dimmer">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/DinningRoom -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/DinningRoom">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Dishwasher -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Dishwasher">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/DoorSensor -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/DoorSensor">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/ContactSensor"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/ElectricalCooker -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/ElectricalCooker">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/ElectricityMeter -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/ElectricityMeter">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Meter"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnergyConsumption -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnergyConsumption">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Floor -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Floor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/BuildingSpace"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Fridge -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Fridge">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Garage -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Garage">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/BuildingSpace"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Garden -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Garden">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/BuildingSpace"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Humidity -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Humidity">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/HumiditySensor -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/HumiditySensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/IndoorTemperature -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/IndoorTemperature">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Temperature"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Kitchen -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Kitchen">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Light -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Light">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LightSensor -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LightSensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LightSwitch -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LightSwitch">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LivingRoom -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LivingRoom">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Localisation -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Localisation">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Loudness -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Loudness">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Noise"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LoudnessSensor -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LoudnessSensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Microwave -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Microwave">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Motion -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Motion">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/MovementSensor -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/MovementSensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Noise -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Noise">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/OutdoorTemperaturee -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/OutdoorTemperaturee">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Temperature"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Oven -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Oven">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PeopleNumber -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PeopleNumber">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Presence"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PeoplePresencee -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PeoplePresencee">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Presence"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Positioning -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Positioning">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Power -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Power">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Presence -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Presence">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PresenceSensor -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PresenceSensor">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/MovementSensor"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Pressure -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Pressure">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PressureSensor -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PressureSensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Radio -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Radio">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BrownGoods"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/RainRate -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/RainRate">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Weather"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/RainrateSensor -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/RainrateSensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/RelativeHumidity -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/RelativeHumidity">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Humidity"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Relay -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Relay">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/BuildingSpace"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Socket -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Socket">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Device"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/StorageRoom -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/StorageRoom">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Temperature -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Temperature">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/TemperatureSensor -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/TemperatureSensor"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Toilet -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Toilet">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Tv -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Tv">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BrownGoods"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/VOC -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/VOC">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/VOCSensor -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/VOCSensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/VentilationLevel -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/VentilationLevel">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WashingMachine -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WashingMachine">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WaterBoiler -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WaterBoiler">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BrownGoods"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WaterRunning -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WaterRunning">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WaterRunningSensor -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WaterRunningSensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Weather -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Weather">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Appliance"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WindSpeed -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WindSpeed">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Weather"/>
+    </owl:Class>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WindSpeedSensor -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WindSpeedSensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    </owl:Class>
+
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Pump -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Pump">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/HVAC"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->

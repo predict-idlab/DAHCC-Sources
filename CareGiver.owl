@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://dahcc.idlab.ugent.be/Ontology/CareGiver/"
+     xml:base="https://dahcc.idlab.ugent.be/Ontology/CareGiver/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/">
+        <owl:imports rdf:resource="https://saref.etsi.org/saref4ehaw/v1.1.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/CareGiver/callAssignedTo -->
+
+    <owl:ObjectProperty rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/callAssignedTo">
+        <rdfs:domain rdf:resource="https://dahcc.idlab.ugent.be/Ontology/CareGiver/Call"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Caregiver"/>
+                    <rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/Helper"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/CareGiver/callMadeBY -->
+
+    <owl:ObjectProperty rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/callMadeBY">
+        <rdfs:domain rdf:resource="https://dahcc.idlab.ugent.be/Ontology/CareGiver/Call"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/CallTerminal"/>
+                    <rdf:Description rdf:about="https://saref.etsi.org/saref4ehaw/User"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/CareGiver/careProvidedFor -->
+
+    <owl:ObjectProperty rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/careProvidedFor">
+        <rdfs:domain rdf:resource="https://dahcc.idlab.ugent.be/Ontology/CareGiver/CareProvision"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/saref4ehaw/User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/CareGiver/AssistanceCall -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/AssistanceCall">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/CareGiver/Call"/>
+    </owl:Class>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/CareGiver/Call -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/Call">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Task"/>
+    </owl:Class>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/CareGiver/CallTerminal -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/CallTerminal">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/accomplishes"/>
+                <owl:someValuesFrom rdf:resource="https://dahcc.idlab.ugent.be/Ontology/CareGiver/Call"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/CareGiver/CareProvision -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/CareProvision">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4ehaw/Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/CareGiver/ContextCall -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/ContextCall">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/CareGiver/Call"/>
+    </owl:Class>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/CareGiver/FormalCareGiver -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/FormalCareGiver">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4ehaw/Caregiver"/>
+    </owl:Class>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/CareGiver/GeneralPractitioner -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/GeneralPractitioner">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4ehaw/Caregiver"/>
+    </owl:Class>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/CareGiver/InformalCareGiver -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/InformalCareGiver">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4ehaw/Helper"/>
+    </owl:Class>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/CareGiver/NormalCall -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/NormalCall">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/CareGiver/Call"/>
+    </owl:Class>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/CareGiver/TechnicalCall -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/TechnicalCall">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/CareGiver/Call"/>
+    </owl:Class>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/CareGiver/UrgencyCall -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/UrgencyCall">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/CareGiver/Call"/>
+    </owl:Class>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/CareGiver/UrgentPriorityCall -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/UrgentPriorityCall">
+        <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/CareGiver/Call"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,1114 @@
+@prefix : <https://saref.etsi.org/saref4wear/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix geosp: <http://www.opengis.net/ont/geosparql#> .
+@prefix saref: <https://saref.etsi.org/core/> .
+@prefix s4city: <https://saref.etsi.org/saref4city/> .
+@prefix s4syst: <https://saref.etsi.org/saref4syst/> .
+@prefix s4wear: <https://saref.etsi.org/saref4wear/> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ssn-system: <http://www.w3.org/ns/ssn/systems/> .
+@base <https://saref.etsi.org/saref4wear/> .
+
+<https://saref.etsi.org/saref4wear/> rdf:type owl:Ontology ;
+                                      owl:versionIRI <https://saref.etsi.org/saref4wear/v1.1.1/> ;
+                                      dcterms:created "2019-01-01"^^xsd:date ;
+                                      dcterms:creator <http://www.garcia-castro.com/foaf.rdf#me> ,
+                                                      <https://www.linkedin.com/in/maurodragoni/MauroDragoni> ;
+                                      dcterms:description "SAREF4WEAR is an extension of SAREF for Wearables"@en ;
+                                      dcterms:issued "2020-02-01"^^xsd:date ;
+                                      dcterms:license <https://forge.etsi.org/etsi-software-license> ;
+                                      dcterms:modified "2020-06-06"^^xsd:date ;
+                                      dcterms:publisher <https://www.etsi.org/> ;
+                                      dcterms:source <https://saref.etsi.org/sources/saref4wear/> ;
+                                      dcterms:title "SAREF4WEAR: an extension of SAREF for Wearables"@en ;
+                                      vann:preferredNamespacePrefix "s4wear" ;
+                                      vann:preferredNamespaceUri "https://saref.etsi.org/saref4wear/" ;
+                                      owl:versionInfo "v1.1.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/affiliation
+###  schema:affiliation rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/familyName
+schema:familyName rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/givenName
+schema:givenName rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/name
+schema:name rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+saref:FeatureOfInterest a owl:Class .
+
+saref:Measurement a owl:Class .
+
+saref:isMeasurementOf a owl:ObjectProperty .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+schema:affiliation rdf:type owl:ObjectProperty ;
+                   rdfs:comment "An organization that this person is affiliated with. For example, a school/university, a club, or a team."@en ;
+                   rdfs:label "affiliation"@en.
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+geosp:hasGeometry rdf:type owl:ObjectProperty ;
+                  rdfs:comment "A spatial representation for a given feature."@en ;
+                  rdfs:isDefinedBy geosp: ;
+                  rdfs:label "hasGeometry"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfContains
+geosp:sfContains rdf:type owl:ObjectProperty ;
+                 rdfs:comment "Exists if the subject SpatialObject spatially contains the object SpatialObject."@en ;
+                 rdfs:isDefinedBy geosp: ;
+                 rdfs:label "sfContains"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfWithin
+geosp:sfWithin rdf:type owl:ObjectProperty ;
+               rdfs:comment "Exists if the subject SpatialObject is spatially within the object SpatialObject."@en ;
+               rdfs:isDefinedBy geosp: ;
+               rdfs:label "sfWithin"@en .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#location
+geo:location rdf:type owl:ObjectProperty ;
+             rdfs:comment "The relation between something and the point, or other geometrical thing in space, where it is.  For example, the relationship between a radio tower and a Point with a given lat and long. Or a relationship between a park and its outline as a closed arc of points, or a road and its location as a arc (a sequence of points). Clearly in practice there will be limit to the accuracy of any such statement, but one would expect an accuracy appropriate for the size of the object and uses such as mapping."@en ;
+             rdfs:isDefinedBy geo: ;
+             rdfs:label "location" .
+
+
+###  http://www.w3.org/ns/ssn/systems/hasSystemCapability
+ssn-system:hasSystemCapability rdf:type owl:ObjectProperty ;
+                               rdfs:comment "Relation from a System to a SystemCapability describing the capabilities of the System under certain Conditions."@en ;
+                               rdfs:isDefinedBy ssn-system: ;
+                               rdfs:label "has system capability"@en .
+
+
+###  https://saref.etsi.org/core/consistsOf
+saref:consistsOf rdf:type owl:ObjectProperty ;
+                 rdfs:comment "A relationship indicating a composite entity that consists of other entities (e.g., a temperature/humidity sensor that consists of a temperature sensor and a humidity sensor)"@en ;
+                 rdfs:isDefinedBy saref: ;
+                 rdfs:label "consists of"@en .
+
+
+###  https://saref.etsi.org/core/controlsProperty
+saref:controlsProperty rdf:type owl:ObjectProperty ;
+                       rdfs:comment "A relationship specifying the property that can be controlled by a certain device."@en ;
+                       rdfs:isDefinedBy saref: ;
+                       rdfs:label "controls property"@en .
+
+
+###  https://saref.etsi.org/core/hasFunction
+saref:hasFunction rdf:type owl:ObjectProperty ;
+                  rdfs:domain s4wear:Wearable ;
+                  rdfs:range saref:Function ;
+                  rdfs:comment "A relationship identifying the function of a device."@en ;
+                  rdfs:label "has function"@en .
+
+
+###  https://saref.etsi.org/core/hasProperty
+saref:hasProperty rdf:type owl:ObjectProperty ;
+                  rdfs:comment "A relationship between a feature of interest and a property of that feature."@en ;
+                  rdfs:label "has property"@en .
+
+
+###  https://saref.etsi.org/core/isControlledByDevice
+saref:isControlledByDevice rdf:type owl:ObjectProperty ;
+                           rdfs:comment "A relationship specifying the devices that can control a certain property."@en ;
+                           rdfs:isDefinedBy saref: ;
+                           rdfs:label "is controlled by device"@en .
+
+
+###  https://saref.etsi.org/core/isMeasuredByDevice
+saref:isMeasuredByDevice rdf:type owl:ObjectProperty ;
+                         rdfs:comment "A relationship specifying the devices that can measure a certain property."@en ;
+                         rdfs:isDefinedBy saref: ;
+                         rdfs:label "is measured by device"@en .
+
+
+###  https://saref.etsi.org/core/isMeasuredIn
+saref:isMeasuredIn rdf:type owl:ObjectProperty ;
+                   rdfs:comment "A relationship identifying the unit of measure used for a certain entity."@en ;
+                   rdfs:isDefinedBy saref: ;
+                   rdfs:label "is measured in"@en .
+
+
+###  https://saref.etsi.org/core/makesMeasurement
+saref:makesMeasurement rdf:type owl:ObjectProperty ;
+                       owl:inverseOf saref:measurementMadeBy ;
+                       rdfs:comment "A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates."@en ;
+                       rdfs:isDefinedBy saref: ;
+                       rdfs:label "makes measurement"@en .
+
+
+###  https://saref.etsi.org/core/measurementMadeBy
+saref:measurementMadeBy rdf:type owl:ObjectProperty ;
+                        rdfs:comment "A relation between a measurement and the device that made it."@en ;
+                        rdfs:isDefinedBy saref: ;
+                        rdfs:label "measurement made by"@en .
+
+
+###  https://saref.etsi.org/core/measuresProperty
+saref:measuresProperty rdf:type owl:ObjectProperty ;
+                       rdfs:comment "A relationship specifying the property that can be measured by a certain device."@en ;
+                       rdfs:isDefinedBy saref: ;
+                       rdfs:label "measures property"@en .
+
+
+###  https://saref.etsi.org/core/relatesToMeasurement
+saref:relatesToMeasurement rdf:type owl:ObjectProperty ;
+                           rdfs:comment "A relationship between a property and the measurements it relates to."@en ;
+                           rdfs:isDefinedBy saref: ;
+                           rdfs:label "relates to measurement"@en .
+
+
+###  https://saref.etsi.org/core/relatesToProperty
+saref:relatesToProperty rdf:type owl:ObjectProperty ;
+                        rdfs:comment "A relationship between a measurement and the property it relates to."@en ;
+                        rdfs:isDefinedBy saref: ;
+                        rdfs:label "relates to property"@en .
+
+
+###  https://saref.etsi.org/saref4city/takesPlaceAtFacility
+s4city:takesPlaceAtFacility rdf:type owl:ObjectProperty ;
+                            rdfs:comment "A relationship specifying in which facility and event takes place."@en ;
+                            rdfs:isDefinedBy s4city: ;
+                            rdfs:label "takes place at facility"@en .
+
+
+###  https://saref.etsi.org/saref4syst/connectedTo
+s4syst:connectedTo rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Links a system to a system it is connected to. Connected systems interact in some way. The exact meaning of \"interact\" is defined by sub properties of s4syst:connectedTo. Property s4syst:connectedTo is symmetric. This property can be qualified using class s4syst:Connection, which connects the two systems. If there is a connection between several systems, then one may infer these systems are pairwise connected."@en ;
+                   rdfs:label "connected to"@en .
+
+
+###  https://saref.etsi.org/saref4wear/controlsFeature
+s4wear:controlsFeature rdf:type owl:ObjectProperty ;
+                       rdfs:domain saref:Device ;
+                       rdfs:range saref:FeatureOfInterest ;
+                       rdfs:comment "A relationship specifying the features of interest that are controlled by a device."@en ;
+                       rdfs:label "controls feature"@en .
+
+
+###  https://saref.etsi.org/saref4wear/featureIsControlledByDevice
+s4wear:featureIsControlledByDevice rdf:type owl:ObjectProperty ;
+                                   rdfs:domain saref:FeatureOfInterest ;
+                                   rdfs:range saref:Device ;
+                                   rdfs:comment "A relationship specifying the devices that control a feature of interest."@en ;
+                                   rdfs:label "feature is controlled by device"@en .
+
+
+###  https://saref.etsi.org/saref4wear/featureIsMeasuredByDevice
+s4wear:featureIsMeasuredByDevice rdf:type owl:ObjectProperty ;
+                                 rdfs:domain saref:FeatureOfInterest ;
+                                 rdfs:range saref:Device ;
+                                 rdfs:comment "A relationship specifying the devices that measure a feature of interest."@en ;
+                                 rdfs:label "feature is measured by device"@en .
+
+
+###  https://saref.etsi.org/saref4wear/followsPolicy
+s4wear:followsPolicy rdf:type owl:ObjectProperty ;
+                     rdfs:domain s4wear:Wearable ;
+                     rdfs:range s4wear:Policy ;
+                     rdfs:comment "A relationship specifying the policy followed by a wearable device."@en ;
+                     rdfs:label "follows policy"@en .
+
+
+###  https://saref.etsi.org/saref4wear/hasInterface
+s4wear:hasInterface rdf:type owl:ObjectProperty ;
+                    rdfs:domain saref:Device ;
+                    rdfs:range s4wear:Interface ;
+                    rdfs:comment "A relationship specifying the interface with which a device is equipped."@en ;
+                    rdfs:label "has interface"@en .
+
+
+###  https://saref.etsi.org/saref4wear/hasPowerSupply
+s4wear:hasPowerSupply rdf:type owl:ObjectProperty ;
+                      rdfs:domain saref:Device ;
+                      rdfs:range s4wear:PowerSupply ;
+                      rdfs:comment "A relationship specifying the type of power supply equipping a device."@en ;
+                      rdfs:label "has power supply"@en .
+
+
+###  https://saref.etsi.org/saref4wear/hasSensor
+s4wear:hasSensor rdf:type owl:ObjectProperty ;
+                 rdfs:domain saref:Device ;
+                 rdfs:range saref:Sensor ;
+                 rdfs:comment "A relationship specifying a sensor integrated into a device."@en ;
+                 rdfs:label "has sensor"@en .
+
+
+###  https://saref.etsi.org/saref4wear/installs
+s4wear:installs rdf:type owl:ObjectProperty ;
+                rdfs:domain s4city:Facility ;
+                rdfs:range saref:Device ;
+                rdfs:comment "A relationship specifying in which facility a device has been installed."@en ;
+                rdfs:label "installs"@en .
+
+
+###  https://saref.etsi.org/saref4wear/interactsWith
+s4wear:interactsWith rdf:type owl:ObjectProperty ;
+                     rdfs:domain s4wear:User ;
+                     rdfs:range saref:Device ;
+                     rdfs:comment "A relationship specifying the interaction between a user and a device."@en ;
+                     rdfs:label "interacts with"@en .
+
+
+###  https://saref.etsi.org/saref4wear/isDetectedBy
+s4wear:isDetectedBy rdf:type owl:ObjectProperty ;
+                    rdfs:domain s4wear:Occurrence ;
+                    rdfs:range saref:Device ;
+                    rdfs:comment "Defines the relationship between an occurrence and the device detecting it." ;
+                    rdfs:label "is detected by"@en .
+
+
+###  https://saref.etsi.org/saref4wear/isLocated
+s4wear:isLocated rdf:type owl:ObjectProperty ;
+                 rdfs:domain s4wear:Wearable ;
+                 rdfs:range s4wear:Wearer ;
+                 rdfs:comment "A relationship specifying the location of a wearer with respect to a wearable."@en ;
+                 rdfs:label "is located"@en .
+
+
+###  https://saref.etsi.org/saref4wear/isLocatedIn
+s4wear:isLocatedIn rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf s4wear:isLocated ;
+                   rdfs:domain s4wear:InBodyWearable ;
+                   rdfs:range s4wear:Wearer ;
+                   rdfs:comment "A relationship specifying the location of a wearer with respect to an in-body wearable."@en ;
+                   rdfs:label "is located in"@en .
+
+
+###  https://saref.etsi.org/saref4wear/isLocatedNear
+s4wear:isLocatedNear rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf s4wear:isLocated ;
+                     rdfs:domain s4wear:NearBodyWearable ;
+                     rdfs:range s4wear:Wearer ;
+                     rdfs:comment "A relationship specifying the location of a wearer with respect to an near-body wearable."@en ;
+                     rdfs:label "is located near"@en .
+
+
+###  https://saref.etsi.org/saref4wear/isLocatedOn
+s4wear:isLocatedOn rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf s4wear:isLocated ;
+                   rdfs:domain s4wear:OnBodyWearable ;
+                   rdfs:range s4wear:Wearer ;
+                   rdfs:comment "A relationship specifying the location of a wearer with respect to an on-body wearable."@en ;
+                   rdfs:label "is located on"@en .
+
+
+###  https://saref.etsi.org/saref4wear/isTriggeredBy
+s4wear:isTriggeredBy rdf:type owl:ObjectProperty ;
+                     owl:inverseOf s4wear:triggers ;
+                     rdfs:domain saref:ActuatingFunction ;
+                     rdfs:range saref:Device ;
+                     rdfs:comment "A relationship specifying the function actuating the work of a device."@en ;
+                     rdfs:label "is triggered by"@en .
+
+
+###  https://saref.etsi.org/saref4wear/measuresFeature
+s4wear:measuresFeature rdf:type owl:ObjectProperty ;
+                       rdfs:domain saref:Device ;
+                       rdfs:range saref:FeatureOfInterest ;
+                       rdfs:comment "A relationship specifying the features of interest that are measured by a device."@en ;
+                       rdfs:label "measures feature"@en .
+
+
+###  https://saref.etsi.org/saref4wear/monitors
+s4wear:monitors rdf:type owl:ObjectProperty ;
+                rdfs:domain saref:Device ;
+                rdfs:range saref:Device ;
+                rdfs:comment "A relationship specifying the monitoring activity of a device on another device."@en ;
+                rdfs:label "monitors"@en .
+
+
+###  https://saref.etsi.org/saref4wear/sendsInformationTo
+s4wear:sendsInformationTo rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf s4syst:connectedTo ;
+                          rdfs:domain s4wear:Wearable ;
+                          rdfs:range s4wear:Wearable ;
+                          rdfs:comment "A relationship specifying the sending information operation between two wearables."@en ;
+                          rdfs:label "sends information to"@en .
+
+
+###  https://saref.etsi.org/saref4wear/sendsNotificationsTo
+s4wear:sendsNotificationsTo rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf s4syst:connectedTo ;
+                            rdfs:domain s4wear:Wearable ;
+                            rdfs:range s4wear:Wearer ;
+                            rdfs:comment "A relationship specifying the sending notification operation between two wearables."@en ;
+                            rdfs:label "sends notifications to"@en .
+
+
+###  https://saref.etsi.org/saref4wear/takesPlaceAt
+s4wear:takesPlaceAt rdf:type owl:ObjectProperty ;
+                    rdfs:comment "The place where an occurrence takes place."@en ;
+                    rdfs:label "takes place at"@en .
+
+
+###  https://saref.etsi.org/saref4wear/triggers
+s4wear:triggers rdf:type owl:ObjectProperty ;
+                rdfs:domain saref:Device ;
+                rdfs:range saref:ActuatingFunction ;
+                rdfs:comment "A relationship specifying the function actuating the work of a device."@en ;
+                rdfs:label "triggers"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://saref.etsi.org/core/hasTimestamp
+saref:hasTimestamp rdf:type owl:DatatypeProperty ;
+                   rdfs:comment "A relationship stating the timestamp of an entity (e.g. a measurement)."@en ;
+                   rdfs:isDefinedBy saref: ;
+                   rdfs:label "has timestamp"@en .
+
+
+###  https://saref.etsi.org/core/hasValue
+saref:hasValue rdf:type owl:DatatypeProperty ;
+               rdfs:comment "A relationship defining the value of a certain property, e.g., energy or power. Note that, even if numeric values are expected to enable reasoning, measurement values could use other datatypes."@en ;
+               rdfs:isDefinedBy saref: ;
+               rdfs:label "has value"@en .
+
+
+###  https://saref.etsi.org/saref4wear/hasCapacity
+s4wear:hasCapacity rdf:type owl:DatatypeProperty ;
+                   rdfs:domain s4city:Facility ;
+                   rdfs:range xsd:long ;
+                   rdfs:comment "A relationship defining the capacity of a facility."@en ;
+                   rdfs:label "has capacity"@en .
+
+
+###  https://saref.etsi.org/saref4wear/hasCommand
+s4wear:hasCommand rdf:type owl:DatatypeProperty ;
+                  rdfs:domain saref:ActuatingFunction ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "A relationship defining a command triggered by an actuating function."@en ;
+                  rdfs:label "has command"@en .
+
+
+###  https://saref.etsi.org/saref4wear/hasDataTransmissionRate
+s4wear:hasDataTransmissionRate rdf:type owl:DatatypeProperty ;
+                               rdfs:domain s4wear:Wearable ;
+                               rdfs:range xsd:double ;
+                               rdfs:comment "A relationship defining the data transmission rate of a wearable."@en ;
+                               rdfs:label "has data transmission rate"@en .
+
+
+###  https://saref.etsi.org/saref4wear/hasHeight
+s4wear:hasHeight rdf:type owl:DatatypeProperty ;
+                 rdfs:domain s4wear:Wearable ;
+                 rdfs:range xsd:double ;
+                 rdfs:comment "A relationship defining the height dimension of a wearable."@en ;
+                 rdfs:label "has height"@en .
+
+
+###  https://saref.etsi.org/saref4wear/hasLength
+s4wear:hasLength rdf:type owl:DatatypeProperty ;
+                 rdfs:domain s4wear:Wearable ;
+                 rdfs:range xsd:double ;
+                 rdfs:comment "A relationship defining the length dimension of a wearable."@en ;
+                 rdfs:label "has length"@en .
+
+
+###  https://saref.etsi.org/saref4wear/hasStorage
+s4wear:hasStorage rdf:type owl:DatatypeProperty ;
+                  rdfs:domain s4wear:Wearable ;
+                  rdfs:range xsd:double ;
+                  rdfs:comment "A relationship defining the storage capacity of a wearable."@en ;
+                  rdfs:label "has storage"@en .
+
+
+###  https://saref.etsi.org/saref4wear/hasWeight
+s4wear:hasWeight rdf:type owl:DatatypeProperty ;
+                 rdfs:domain s4wear:Wearable ;
+                 rdfs:range xsd:double ;
+                 rdfs:comment "A relationship defining the weight of a wearable device."@en ;
+                 rdfs:label "has weight"@en .
+
+
+###  https://saref.etsi.org/saref4wear/hasWidth
+s4wear:hasWidth rdf:type owl:DatatypeProperty ;
+                rdfs:domain s4wear:Wearable ;
+                rdfs:range xsd:double ;
+                rdfs:comment "A relationship defining the width dimention of a wearable."@en ;
+                rdfs:label "has width"@en .
+
+
+###  https://saref.etsi.org/saref4wear/meansOfTransport
+s4wear:meansOfTransport rdf:type owl:DatatypeProperty ;
+                        rdfs:domain saref:FeatureOfInterest ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "A relationship stating the means of transport on which the wearable is operating."@en ;
+                        rdfs:label "means of transport"@en .
+
+
+###  https://saref.etsi.org/saref4wear/wearerAgeRange
+s4wear:wearerAgeRange rdf:type owl:DatatypeProperty ;
+                      rdfs:domain s4wear:Wearer ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "A relationship stating the age range of a wearer."@en ;
+                      rdfs:label "wearer age range"@en .
+
+
+###  https://saref.etsi.org/saref4wear/wearerStatus
+s4wear:wearerStatus rdf:type owl:DatatypeProperty ;
+                    rdfs:domain s4wear:Wearer ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "A relationship defining the status of a wearer."@en ;
+                    rdfs:label "wearer status"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/vocommons/voaf#Vocabulary
+voaf:Vocabulary rdf:type owl:Class ;
+                rdfs:comment "A vocabulary used in the linked data cloud. An instance of voaf:Vocabulary relies on or is used by at least another instance of voaf:Vocabulary."@en ;
+                rdfs:label "Vocabulary"@en .
+
+
+###  http://schema.org/Organization
+schema:Organization rdf:type owl:Class ;
+                    rdfs:comment "An organization."@en ;
+                    rdfs:label "Organization"@en .
+
+
+###  http://schema.org/Person
+schema:Person rdf:type owl:Class ;
+              rdfs:comment "A person."@en ;
+              rdfs:label "Person"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#Feature
+geosp:Feature rdf:type owl:Class ;
+              rdfs:subClassOf geosp:SpatialObject ;
+              rdfs:comment "This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types."@en ;
+              rdfs:isDefinedBy geosp: ;
+              rdfs:label "Feature"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+geosp:Geometry rdf:type owl:Class ;
+               rdfs:subClassOf geosp:SpatialObject ;
+               rdfs:comment "The class represents the top-level geometry type. This class is equivalent to the UML class GM_Object defined in ISO 19107, and it is superclass of all geometry types."@en ;
+               rdfs:isDefinedBy geosp: ;
+               rdfs:label "Geometry"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#SpatialObject
+geosp:SpatialObject rdf:type owl:Class ;
+                    rdfs:comment "The class spatial-object represents everything that can have a spatial representation. It is superclass of feature and geometry."@en ;
+                    rdfs:isDefinedBy geosp: ;
+                    rdfs:label "Spatial object"@en .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#Point
+geo:Point rdf:type owl:Class ;
+          rdfs:subClassOf geosp:Geometry ;
+          rdfs:comment "A point, typically described using a coordinate system relative to Earth, such as WGS84."@en ;
+          rdfs:isDefinedBy geo: ;
+          rdfs:label "Point"@en .
+
+
+###  http://www.w3.org/ns/ssn/systems/SystemCapability
+ssn-system:SystemCapability rdf:type owl:Class ;
+                            rdfs:comment """Describes normal measurement, actuation, sampling properties such as accuracy, range, precision, etc. of a System under some specified Conditions such as a temperature range.
+The capabilities specified here are those that affect the primary purpose of the System, while those in OperatingRange represent the system's normal operating environment, including Conditions that don't affect the Observations or the Actuations."""@en ;
+                            rdfs:isDefinedBy ssn-system: ;
+                            rdfs:label "System capability"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class ;
+            rdfs:comment "A person"@en ;
+            rdfs:label "Person"@en .
+
+
+###  https://saref.etsi.org/core/ActuatingFunction
+saref:ActuatingFunction rdf:type owl:Class ;
+                        rdfs:subClassOf saref:Function ;
+                        rdfs:comment "A function that allows to transmit data to actuators, such as level settings (e.g., temperature) or binary switching (e.g., open/close, on/off)."@en ;
+                        rdfs:label "Actuating function"@en .
+
+
+###  https://saref.etsi.org/core/Actuator
+saref:Actuator rdf:type owl:Class ;
+               rdfs:subClassOf saref:Device ;
+               rdfs:comment "A device responsible for moving or controlling a mechanism or system by performing an actuating function."@en ;
+               rdfs:label "Actuator"@en .
+
+
+###  https://saref.etsi.org/core/Device
+saref:Device rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty saref:controlsProperty ;
+                               owl:allValuesFrom saref:Property
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty saref:makesMeasurement ;
+                               owl:allValuesFrom saref:Measurement
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty saref:measuresProperty ;
+                               owl:allValuesFrom saref:Property
+                             ] ;
+             rdfs:comment "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function."@en ;
+             rdfs:isDefinedBy saref: ;
+             rdfs:label "Device"@en .
+
+
+###  https://saref.etsi.org/core/EventFunction
+saref:EventFunction rdf:type owl:Class ;
+                    rdfs:subClassOf saref:Function ;
+                    rdfs:comment "A function that allows to notify about some relevant activity; e.g., that a certain threshold value has been exceeded or that some object has moved."@en ;
+                    rdfs:label "Event function"@en .
+
+
+###  https://saref.etsi.org/core/FeatureOfInterest
+saref:FeatureOfInterest rdf:type owl:Class ;
+                        rdfs:comment "A feature of interest represents any real world entity from which a property is measured."@en ;
+                        rdfs:label "Feature of interest"@en .
+
+
+###  https://saref.etsi.org/core/Function
+saref:Function rdf:type owl:Class ;
+               rdfs:comment "The functionality necessary to accomplish the task for which a device is designed. A device can be designed to perform more than one function. Functions can be structured in categories (subclasses) that reflect different points of view, for example, considering the specific application area for which a function can be used (e.g., light, temperature, motion, heat, power, etc.), or the capability that a function can support (e.g., receive, reply, notify, etc.), and so forth."@en ;
+               rdfs:label "Function"@en .
+
+
+###  https://saref.etsi.org/core/Measurement
+saref:Measurement rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty saref:isMeasurementOf ;
+                                    owl:allValuesFrom saref:FeatureOfInterest
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty saref:isMeasuredIn ;
+                                    owl:allValuesFrom saref:UnitOfMeasure
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty saref:relatesToProperty ;
+                                    owl:allValuesFrom saref:Property
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty saref:isMeasuredIn ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass saref:UnitOfMeasure
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty saref:relatesToProperty ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass saref:Property
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty saref:hasTimestamp ;
+                                    owl:allValuesFrom xsd:dateTime
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty saref:hasValue ;
+                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                  ] ;
+                  rdfs:comment "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."@en ;
+                  rdfs:isDefinedBy saref: ;
+                  rdfs:label "Measurement"@en .
+
+
+###  https://saref.etsi.org/core/Property
+saref:Property rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty saref:isControlledByDevice ;
+                                 owl:allValuesFrom saref:Device
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty saref:isMeasuredByDevice ;
+                                 owl:allValuesFrom saref:Device
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty saref:relatesToMeasurement ;
+                                 owl:allValuesFrom saref:Measurement
+                               ] ;
+               rdfs:comment "A quality of a feature of interest that can be measured; an aspect of a feature of interest that is intrinsic to and cannot exist without the feature."@en ;
+               rdfs:isDefinedBy saref: ;
+               rdfs:label "Property"@en .
+
+
+###  https://saref.etsi.org/core/SensingFunction
+saref:SensingFunction rdf:type owl:Class ;
+                      rdfs:subClassOf saref:Function ;
+                      rdfs:comment "A function that allows to transmit data from sensors, such as measurement values (e.g., temperature) or sensing data (e.g., occupancy)."@en ;
+                      rdfs:label "Sensing function"@en .
+
+
+###  https://saref.etsi.org/core/Sensor
+saref:Sensor rdf:type owl:Class ;
+             rdfs:subClassOf saref:Device ;
+             rdfs:comment "A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. Further, a device of category saref:Sensor that performs a saref:SensingFunction."@en ;
+             rdfs:isDefinedBy saref: ;
+             rdfs:label "Sensor"@en .
+
+
+###  https://saref.etsi.org/core/UnitOfMeasure
+saref:UnitOfMeasure rdf:type owl:Class ;
+                    rdfs:comment "The unit of measure is a standard for measurement of a quantity, such as a Property. For example,  Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \\\"watt\\\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM)."@en ;
+                    rdfs:isDefinedBy saref: ;
+                    rdfs:label "Unit of measure"@en .
+
+
+###  https://saref.etsi.org/saref4city/AdministrativeArea
+s4city:AdministrativeArea rdf:type owl:Class ;
+                          rdfs:subClassOf geosp:Feature ;
+                          rdfs:comment "An administrative division, unit, entity, area or region, also referred to as a subnational entity, constituent unit, or country subdivision, is a portion of a country or other region delineated for the purpose of administration. (https://en.wikipedia.org/wiki/Administrative_division)."@en ;
+                          rdfs:isDefinedBy s4city: ;
+                          rdfs:label "Administrative area"@en .
+
+
+###  https://saref.etsi.org/saref4city/CityObject
+s4city:CityObject rdf:type owl:Class ;
+                  rdfs:subClassOf geosp:Feature ;
+                  rdfs:comment "Generic class for describing city objects."@en ;
+                  rdfs:isDefinedBy s4city: ;
+                  rdfs:label "City object"@en .
+
+
+###  https://saref.etsi.org/saref4city/Event
+s4city:Event rdf:type owl:Class ;
+             rdfs:subClassOf s4wear:Occurrence ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty s4city:takesPlaceAtFacility ;
+                               owl:allValuesFrom s4city:Facility
+                             ] ;
+             rdfs:comment "Temporary and scheduled event, like a festival or competition. (Definition taken from Wikidata)."@en ;
+             rdfs:isDefinedBy s4city: ;
+             rdfs:label "Event"@en .
+
+
+###  https://saref.etsi.org/saref4city/Facility
+s4city:Facility rdf:type owl:Class ;
+                rdfs:subClassOf geosp:Feature ;
+                rdfs:comment "A place, amenity, or piece of equipment provided for a particular purpose. (Definition taken from https://en.oxforddictionaries.com/definition/facility)."@en ;
+                rdfs:isDefinedBy s4city: ;
+                rdfs:label "Facility"@en .
+
+
+###  https://saref.etsi.org/saref4wear/BiometricProperty
+s4wear:BiometricProperty rdf:type owl:Class ;
+                         rdfs:subClassOf s4wear:WearerProperty ;
+                         rdfs:comment "Class to group those properties related to the biometric characteristics of wearers."@en ;
+                         rdfs:label "Biometric property"@en .
+
+
+###  https://saref.etsi.org/saref4wear/CommunicatingFunction
+s4wear:CommunicatingFunction rdf:type owl:Class ;
+                             rdfs:subClassOf saref:EventFunction ;
+                             rdfs:comment "A function that allows a device to communicate with another device."@en ;
+                             rdfs:label "Communicating function"@en .
+
+
+###  https://saref.etsi.org/saref4wear/ControllingFunction
+s4wear:ControllingFunction rdf:type owl:Class ;
+                           rdfs:subClassOf saref:Function ;
+                           rdfs:comment "A function that allows to control a device from another device."@en ;
+                           rdfs:label "Controlling function"@en .
+
+
+###  https://saref.etsi.org/saref4wear/CrowdProperty
+s4wear:CrowdProperty rdf:type owl:Class ;
+                     rdfs:subClassOf saref:Property ;
+                     rdfs:comment "Class to group those properties related to crowds."@en ;
+                     rdfs:label "Crowd property"@en .
+
+
+###  https://saref.etsi.org/saref4wear/ElectricalProperty
+s4wear:ElectricalProperty rdf:type owl:Class ;
+                          rdfs:subClassOf s4wear:WearableProperty ;
+                          rdfs:comment "Class to group those electrical properties related to wearables."@en ;
+                          rdfs:label "Electrical property"@en .
+
+
+###  https://saref.etsi.org/saref4wear/ElectricalSafetyProperty
+s4wear:ElectricalSafetyProperty rdf:type owl:Class ;
+                                rdfs:subClassOf s4wear:WearableProperty ;
+                                rdfs:comment "Class to group those electrical safety properties related to wearables."@en ;
+                                rdfs:label "Electrical safety property"@en .
+
+
+###  https://saref.etsi.org/saref4wear/EmissionProperty
+s4wear:EmissionProperty rdf:type owl:Class ;
+                        rdfs:subClassOf s4wear:WearableProperty ;
+                        rdfs:comment "Class to group those emission properties related to wearables."@en ;
+                        rdfs:label "Emission property"@en .
+
+
+###  https://saref.etsi.org/saref4wear/EnvironmentalProperty
+s4wear:EnvironmentalProperty rdf:type owl:Class ;
+                             rdfs:subClassOf saref:Property ;
+                             rdfs:comment "Class to group those properties related to the environment of a wearer."@en ;
+                             rdfs:label "Environmental property"@en .
+
+
+###  https://saref.etsi.org/saref4wear/FabricWearable
+s4wear:FabricWearable rdf:type owl:Class ;
+                      rdfs:subClassOf s4wear:TextileBasedWearable ;
+                      rdfs:comment "A fabric wearable is a fabric integrating the sensors directly into its fibers."@en ;
+                      rdfs:label "Fabric wearable"@en .
+
+
+###  https://saref.etsi.org/saref4wear/InBodyWearable
+s4wear:InBodyWearable rdf:type owl:Class ;
+                      rdfs:subClassOf [ owl:intersectionOf ( s4wear:Wearable
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty s4wear:isLocatedIn ;
+                                                               owl:someValuesFrom s4wear:Wearer
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                      rdfs:comment "An in-body wearable is a wearable located inside a physical body."@en ;
+                      rdfs:label "In-body wearable"@en .
+
+
+###  https://saref.etsi.org/saref4wear/Interface
+s4wear:Interface rdf:type owl:Class ;
+                 rdfs:comment "An interface is the mechanism with which a device can receive or transmit data to another device."@en ;
+                 rdfs:label "Interface"@en .
+
+
+###  https://saref.etsi.org/saref4wear/LivingOrganism
+s4wear:LivingOrganism rdf:type owl:Class ;
+                      rdfs:subClassOf geosp:Feature ,
+                                      saref:FeatureOfInterest ;
+                      rdfs:comment "A living organism is any entity composed of cells."@en ;
+                      rdfs:label "Living organism"@en .
+
+
+###  https://saref.etsi.org/saref4wear/MemoryStorage
+s4wear:MemoryStorage rdf:type owl:Class ;
+                     rdfs:subClassOf saref:Device ;
+                     rdfs:comment "A memory storage is an hardware component intended to store data within the device."@en ;
+                     rdfs:label "Memory storage"@en .
+
+
+###  https://saref.etsi.org/saref4wear/NavigatingFunction
+s4wear:NavigatingFunction rdf:type owl:Class ;
+                          rdfs:subClassOf saref:Function ;
+                          rdfs:comment "A function that allows a device to provide navigation information."@en ;
+                          rdfs:label "Navigating function"@en .
+
+
+###  https://saref.etsi.org/saref4wear/NearBodyWearable
+s4wear:NearBodyWearable rdf:type owl:Class ;
+                        rdfs:subClassOf [ owl:intersectionOf ( s4wear:Wearable
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty s4wear:isLocatedNear ;
+                                                                 owl:someValuesFrom s4wear:Wearer
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                        rdfs:comment "A near-body wearable is a wearable located near a physical body."@en ;
+                        rdfs:label "Near-body wearable"@en .
+
+
+###  https://saref.etsi.org/saref4wear/Occurrence
+s4wear:Occurrence rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty s4wear:takesPlaceAt ;
+                                    owl:allValuesFrom geosp:Feature
+                                  ] ;
+                  rdfs:comment "An occurrence is the fact of something existing or being found in a place."@en ;
+                  rdfs:label "Occurrence"@en .
+
+
+###  https://saref.etsi.org/saref4wear/OnBodyWearable
+s4wear:OnBodyWearable rdf:type owl:Class ;
+                      rdfs:subClassOf [ owl:intersectionOf ( s4wear:Wearable
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty s4wear:isLocatedOn ;
+                                                               owl:someValuesFrom s4wear:Wearer
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                      rdfs:comment "An on-body wearable is a wearable having a direct contact with a physical body."@en ;
+                      rdfs:label "On-body wearable"@en .
+
+
+###  https://saref.etsi.org/saref4wear/Policy
+s4wear:Policy rdf:type owl:Class ;
+              rdfs:comment "A policy is a set of guidelines adopted during the wearable building process and defining how a wearables operates."@en ;
+              rdfs:label "Policy"@en .
+
+
+###  https://saref.etsi.org/saref4wear/PowerSupply
+s4wear:PowerSupply rdf:type owl:Class ;
+                   rdfs:subClassOf saref:Device ;
+                   rdfs:comment "A power supply is an hardware component intended to plug a device to a power grid."@en ;
+                   rdfs:label "Power supply"@en .
+
+
+###  https://saref.etsi.org/saref4wear/Software
+s4wear:Software rdf:type owl:Class ;
+                rdfs:subClassOf saref:FeatureOfInterest ;
+                rdfs:comment "A software is a computer program."@en ;
+                rdfs:label "Software"@en .
+
+
+###  https://saref.etsi.org/saref4wear/TextileBasedSensor
+s4wear:TextileBasedSensor rdf:type owl:Class ;
+                          rdfs:subClassOf saref:Sensor ;
+                          rdfs:comment "A textile-based sensor is a sensor directly integrated into a textile artifact."@en ;
+                          rdfs:label "Textile-based sensor"@en .
+
+
+###  https://saref.etsi.org/saref4wear/TextileBasedWearable
+s4wear:TextileBasedWearable rdf:type owl:Class ;
+                            rdfs:subClassOf s4wear:OnBodyWearable ;
+                            rdfs:comment "A textile-based wearable is a wearable directly integrated into a textile artifact."@en ;
+                            rdfs:label "Textile-based wearable"@en .
+
+
+###  https://saref.etsi.org/saref4wear/User
+s4wear:User rdf:type owl:Class ;
+            rdfs:subClassOf saref:FeatureOfInterest ;
+            rdfs:comment "A user is an entity using a wearable."@en ;
+            rdfs:label "User"@en .
+
+
+###  https://saref.etsi.org/saref4wear/Wearable
+s4wear:Wearable rdf:type owl:Class ;
+                rdfs:subClassOf geosp:Feature ,
+                                saref:Device ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty ssn-system:hasSystemCapability ;
+                                  owl:allValuesFrom ssn-system:SystemCapability
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty saref:hasProperty ;
+                                  owl:allValuesFrom s4wear:WearableProperty
+                                ] ;
+                rdfs:comment "A wearable device is a device that is intended to be located near, on or in an organism."@en ;
+                rdfs:label "Wearable device"@en .
+
+
+###  https://saref.etsi.org/saref4wear/WearableProperty
+s4wear:WearableProperty rdf:type owl:Class ;
+                        rdfs:subClassOf saref:Property ;
+                        rdfs:comment "Class to group those properties related to wearables."@en ;
+                        rdfs:label "Wearable property"@en .
+
+
+###  https://saref.etsi.org/saref4wear/Wearer
+s4wear:Wearer rdf:type owl:Class ;
+              rdfs:subClassOf geosp:SpatialObject ,
+                              [ owl:intersectionOf ( s4wear:LivingOrganism
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty s4wear:featureIsMeasuredByDevice ;
+                                                       owl:someValuesFrom s4wear:Wearable
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty saref:hasProperty ;
+                                owl:allValuesFrom s4wear:WearerProperty
+                              ] ;
+              rdfs:comment "A wearer is any living organism that is sensed by a wearable."@en ;
+              rdfs:label "Wearer"@en .
+
+
+###  https://saref.etsi.org/saref4wear/WearerProperty
+s4wear:WearerProperty rdf:type owl:Class ;
+                      rdfs:subClassOf saref:Property ;
+                      rdfs:comment "Class to group those properties related to wearers."@en ;
+                      rdfs:label "Wearer property"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.garcia-castro.com/foaf.rdf#me
+<http://www.garcia-castro.com/foaf.rdf#me> rdf:type owl:NamedIndividual ,
+                                                    schema:Person ;
+                                           schema:affiliation <https://www.upm.es/> ;
+                                           schema:familyName "GarcÃ­a-Castro" ;
+                                           schema:givenName "RaÃºl" ;
+                                           rdfs:comment "Raul Garcia Castro"@en ;
+                                           rdfs:label "Raul Garcia Castro"@en .
+
+
+###  https://saref.etsi.org/saref4wear/AcousticEmission
+s4wear:AcousticEmission rdf:type owl:NamedIndividual ,
+                                 s4wear:EmissionProperty ;
+                        rdfs:comment "The acoustic emission of the wearable."@en ;
+                        rdfs:label "Acoustic emission"@en .
+
+
+###  https://saref.etsi.org/saref4wear/AirQuality
+s4wear:AirQuality rdf:type owl:NamedIndividual ,
+                           s4wear:EnvironmentalProperty ;
+                  rdfs:comment "The quality of air in the environment."@en ;
+                  rdfs:label "Air quality"@en .
+
+
+###  https://saref.etsi.org/saref4wear/BatteryRemainingTime
+s4wear:BatteryRemainingTime rdf:type owl:NamedIndividual ,
+                                     s4wear:ElectricalProperty ;
+                            rdfs:comment "The time until the battery of the wearable is discharged."@en ;
+                            rdfs:label "Battery remaining time"@en .
+
+
+###  https://saref.etsi.org/saref4wear/CrowdSize
+s4wear:CrowdSize rdf:type owl:NamedIndividual ,
+                          s4wear:CrowdProperty ;
+                 rdfs:comment "The size of a crowd."@en ;
+                 rdfs:label "Crowd size"@en .
+
+
+###  https://saref.etsi.org/saref4wear/HeartRate
+s4wear:HeartRate rdf:type owl:NamedIndividual ,
+                          s4wear:BiometricProperty ;
+                 rdfs:comment "The heart rate of the wearer."@en ;
+                 rdfs:label "Heart rate"@en .
+
+
+###  https://saref.etsi.org/saref4wear/HeatEmission
+s4wear:HeatEmission rdf:type owl:NamedIndividual ,
+                             s4wear:EmissionProperty ;
+                    rdfs:comment "The heat emission of the wearable."@en ;
+                    rdfs:label "Heat emission"@en .
+
+
+###  https://saref.etsi.org/saref4wear/QueueSize
+s4wear:QueueSize rdf:type owl:NamedIndividual ,
+                          s4wear:CrowdProperty ;
+                 rdfs:comment "The size of a queue."@en ;
+                 rdfs:label "Queue size"@en .
+
+
+###  https://saref.etsi.org/saref4wear/RadioFrequencyEmission
+s4wear:RadioFrequencyEmission rdf:type owl:NamedIndividual ,
+                                       s4wear:EmissionProperty ;
+                              rdfs:comment "The radio frequency emission of the wearable."@en ;
+                              rdfs:label "Radio frequency emission"@en .
+
+
+###  https://saref.etsi.org/saref4wear/SoundLevel
+s4wear:SoundLevel rdf:type owl:NamedIndividual ,
+                           s4wear:EnvironmentalProperty ;
+                  rdfs:comment "The level of sound in the environment."@en ;
+                  rdfs:label "Sound level"@en .
+
+
+###  https://saref.etsi.org/saref4wear/Temperature
+s4wear:Temperature rdf:type owl:NamedIndividual ,
+                            s4wear:EnvironmentalProperty ;
+                   rdfs:comment "The temperature of the environment."@en ;
+                   rdfs:label "Temperature"@en .
+
+
+###  https://saref.etsi.org/saref4wear/WearerTemperature
+s4wear:WearerTemperature rdf:type owl:NamedIndividual ,
+                                  s4wear:BiometricProperty ;
+                         rdfs:comment "The temperature of the wearer."@en ;
+                         rdfs:label "Wearer temperature"@en .
+
+
+###  https://www.fbk.eu/
+<https://www.fbk.eu/> rdf:type owl:NamedIndividual ,
+                               schema:Organization ;
+                      schema:name "Fondazione Bruno Kessler" ;
+                      rdfs:comment "Fondazione Bruno Kessler"@en ;
+                      rdfs:label "Fondazione Bruno Kessler"@en .
+
+
+###  https://www.linkedin.com/in/maurodragoni/MauroDragoni
+<https://www.linkedin.com/in/maurodragoni/MauroDragoni> rdf:type owl:NamedIndividual ,
+                                                                 schema:Person ;
+                                                        schema:affiliation <https://www.fbk.eu/> ;
+                                                        schema:familyName "Dragoni" ;
+                                                        schema:givenName "Mauro" ;
+                                                        rdfs:comment "Mauro Dragoni"@en ;
+                                                        rdfs:label "Mauro Dragoni"@en .
+
+
+###  https://www.upm.es/
+<https://www.upm.es/> rdf:type owl:NamedIndividual ,
+                               schema:Organization ;
+                      schema:name "Universidad PolitÃ©cnica de Madrid" ;
+                      rdfs:comment "Universidad PolitÃ©cnica de Madrid"@en ;
+                      rdfs:label "Universidad PolitÃ©cnica de Madrid"@en .

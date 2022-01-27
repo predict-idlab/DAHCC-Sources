@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://dahcc.idlab.ugent.be/Protego/MonitoredPerson#"
+     xml:base="https://dahcc.idlab.ugent.be/Protego/MonitoredPerson"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:DIAB="http://purl.bioontology.org/ontology/DIAB/#"
+     xmlns:core="https://saref.etsi.org/core/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:saref4ehaw="https://saref.etsi.org/saref4ehaw/"
+     xmlns:MonitoredPerson="https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/">
+    <owl:Ontology rdf:about="https://dahcc.idlab.ugent.be/Protego/MonitoredPerson">
+        <owl:imports rdf:resource="http://purl.bioontology.org/ontology/DIAB/"/>
+        <owl:imports rdf:resource="https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/"/>
+        <owl:imports rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndWearables/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DIAB_000014 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DIAB_000014">
+        <owl:inverseOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/hasSymptom"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/hasSymptom -->
+
+    <rdf:Description rdf:about="https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/hasSymptom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_9351 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DOID_9351">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4ehaw/ChronicDisease"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0001629 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MP_0001629">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndWearables/HeartRate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_010056 -->
+
+    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_010056">
+        <owl:equivalentClass rdf:resource="https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/Symptom"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/Symptom -->
+
+    <rdf:Description rdf:about="https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/Symptom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Protego/MonitoredPerson#illness -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Protego/MonitoredPerson#illness">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/DOID_9744"/>
+        <MonitoredPerson:hasSymptom rdf:resource="https://dahcc.idlab.ugent.be/Protego/MonitoredPerson#phenotypeY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Protego/MonitoredPerson#personX -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Protego/MonitoredPerson#personX">
+        <rdf:type rdf:resource="https://saref.etsi.org/saref4ehaw/Patient"/>
+        <saref4ehaw:hasChronicDisease rdf:resource="https://dahcc.idlab.ugent.be/Protego/MonitoredPerson#illness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Protego/MonitoredPerson#phenotypeY -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Protego/MonitoredPerson#phenotypeY">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MP_0001629"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Protego/MonitoredPerson#propertyX -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Protego/MonitoredPerson#propertyX">
+        <core:isPropertyOf rdf:resource="https://dahcc.idlab.ugent.be/Protego/MonitoredPerson#phenotypeY"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
