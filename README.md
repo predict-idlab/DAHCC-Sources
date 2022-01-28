@@ -1,4 +1,5 @@
 # DAHCC-ontology
+
 The Data Analytics in Healthcare and Connected Care ontology
 
 <img width="1242" alt="DHACC_overview" src="https://dahcc.idlab.ugent.be/dahcc_overview.png">
