@@ -21,7 +21,7 @@ If you use the DAHCC ontology in a scholarly article, we would appreciate a cita
   author       = {Bram Steenwinckel and Mathias De Brouwer and Femke Ongenae},
   title        = {{DAHCC: The Data Analytics in Healthcare and Connected Care ontology}},
   organization = {IDLab},
-  year         = {2021},
+  year         = {2022},
   url          = {https://dahcc.idlab.ugent.be}
 }
 ```
