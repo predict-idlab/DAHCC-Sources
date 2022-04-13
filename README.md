@@ -41,7 +41,7 @@ In the end, the DAHCC ontology existed of 5 interacting sub ontologies, each des
 
 ## DAHCC datasets
 
-Data captured in a daily life setting, gathered through IoT sensors in households and wearables attached to residents were semantically enriched through the DAHCC ontology. More information about these datasets can be found in the [Ontologies](https://dahcc.idlab.ugent.be/Datasets.html) section. 
+Data captured in a daily life setting, gathered through IoT sensors in households and wearables attached to residents were semantically enriched through the DAHCC ontology. More information about these datasets can be found in the [Datasets](https://dahcc.idlab.ugent.be/Datasets.html) section. 
 
 
 ## DAHCC Applications
