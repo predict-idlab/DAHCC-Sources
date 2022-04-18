@@ -1,7 +1,7 @@
 
 An overview of all DAHCC datasets are provided here.
 
-## DAHCC Protego
+# DAHCC Protego
 
 To accurately assess a call made for help by the person at home, it is important to get a good view of the daily activities and lifestyle of the person being monitored at home. Therefore, one of the aims within the [PROTEGO](https://www.imec-int.com/en/research-portfolio/protego)  project was to design algorithms that are able to automatically determine the activity/lifestyle of the monitored person based on the available sensor data in their home, e.g. sensors for location, movement, light, temperature, the use of certain devices, etc. or on the monitored people themselves, e.g. wearables or sensors on smartphone. In addition, a limited number of sensors are also provided for the monitored person to assess their condition, e.g. blood pressure or weight. The data collection is performed in the [IDLab Homelab](https://www.ugent.be/ea/idlab/en/research/research-infrastructure/homelab.htm).
 
@@ -146,7 +146,7 @@ All data samples and performed activities were semantically mapped onto the DAHC
     </tr>
 </table>
 
-### Homelab
+## Homelab
 The IDLab [HomeLab](https://idlab.technology/infrastructure/homelab/) was used for this study. The HomeLab is an 'ordinary' house on the UGent Campus Zwijnaarde, which is equipped with all kinds of sensors and actuators. It allows to test smart home applications in a very realistic environment.
 
 The following rooms were used in the house by the participants:
@@ -165,7 +165,7 @@ The other rooms in the house were closed off (locked) such that the participants
 
 **A semantic description of the IDLab HomeLab, describing all the rooms and available sensors based on the DAHCC ontology is made available [here](https://raw.githubusercontent.com/predict-idlab/DAHCC-Ontology/main/instantiated_examples/_Homelab.owl)**
 
-### Contextual sensors
+## Contextual sensors
 
 Below a list of contextual sensors is given that are installed in the HomeLab and will be used within PROTEGO. These sensors were integrated using the [DYAMAND](https://dyamand.tech/) platform (except for the water running sensor which streams its data through the streaming application, see the section below). This platform collects the data from these sensors and provides it in a unified format.
 
@@ -283,15 +283,15 @@ Participant wearing the AQURA bracelet & Empatica
 
 Water Running Sensor
 
-### Wearable & smartphone sensors and applications
+## Wearable & smartphone sensors and applications
 
 Each participant was asked to install two smartphone applications: (a) the streaming application to collect data from the wearable (Empatica E4) and the smartphone sensors and send it to the data platform, and (b) the Sleep as Android application. The applications are only available for Android phones. If the participant does not have an Android phone, one will be provided by the researchers.
 
-#### Empatica E4
+### Empatica E4
 
 The e4 wristband from [Empatica](https://www.empatica.com/research/e4/) is a wearable wireless band, which measures acceleration (x,y,z) (at 32 Hz), skin temperature (at 4 Hz), galvanic skin response (at 4 Hz), and blood volume pulse (at 64 Hz) (from which heart rate (variability) and the “inter beat interval” of the heart rate can be derived). The data of the wearable is streamed in real-time to the data platform by using Bluetooth and a streaming application on the smartphone (see below). The E4 is a CE medical certified device.
 
-#### Streaming application & smartphone sensor data collection
+### Streaming application & smartphone sensor data collection
 
 The streaming application is an Android application that is installed on the smartphone of the participant if he/she has an Android phone or that is included on the smartphone provided to the participants that do not own an Android phone. Once the streaming application is configured by the researchers at the start of the data collection protocol, the participants only need to minimally interact with the application, namely only to check whether the data collection is still performing correctly or to reconnect the Empatica when Bluetooth connection is lost.
 
@@ -303,7 +303,7 @@ The streaming application is used for (a) streaming the data from the Empatica t
   
 Concerning the smartphone the following data is collected: location of the smartphone (GPS coordinates), light intensity of the environment of the phone, frequency & amplitude of the noise in the environment measured through the smartphone microphone, acceleration of the smartphone, linear acceleration of the smartphone, values measured by the gyroscope in the smartphone, rotation of the smartphone, gravity applied to the smartphone, strength of the magnetic field around the smartphone, proximity of objects, applications opened by the user on the smartphone, timestamps of interaction with the keyboard of the smartphone by the user (only timestamp, NOT what was typed), adjustments to the status of the screen of the smartphone (on, off, locked, unlocked), number of steps performed by the participant, and the probable start and stop time of the sleep period of the participant (performed with the [Google Sleep API](https://developers.google.com/location-context/sleep)). Some parameters can only be performed by Android phones that have the necessary sensors available and when the smartphone’s operating system is up-to-date.
 
-#### Sleep as Android application
+### Sleep as Android application
 
 The participants will also install the [Sleep as Android](https://sleep.urbandroid.org/) application (or it is installed on the provided phone). When sleeping with the smartphone in the bed, based on the phone’s sensors the application will perform sleep cycle tracking, collect snoring stats, collect room noise stats and start sleep and awake detection. The application Sleep as Android is only used in Off-line mode. As such, it only collects data on the smartphone of the participant itself (if he/she is using his/her own smartphone) or on the IDLab phone. At the end of the data collection, the participant sends a ZIP file of the collected data to the supervising researcher. The researcher places the ZIP of the secure IDLab Cloud environment.
 
@@ -316,7 +316,7 @@ This was used during the data collection to allow participants to annotate the a
 
 <img src="https://lh4.googleusercontent.com/xsMMihGrMlHP4jgxX-LwyzY9aO7wh3mkXP-ConYbfEgTCsJnq2MXmnR-_z-C8L0v1WDQFo_A-w_MgsrF4lmFlIvGybRdRUcnY2HlvzpsvplvaauaRuQ9eliGAjeFD14bxq0QJCpv" alt="drawing" width="450"/><img src="https://lh3.googleusercontent.com/PP0nVscaBMZ-91Zy7_CNaC0MkdtmTRae_9gw0zEWnG2hMyWnI8kB5eVilzd_hxKzYFAaW1GqJ5yFRtDdS2eaARpclQgcKOsRZzK8V_yKbe2fG4N8GYgxfMbnQWzINy5lmzN-tGvn" alt="drawing" width="450"/>
 
-### Raw Dataset
+## Raw Dataset
 
 [Full Protego Day Dataset](https://dahcc.idlab.ugent.be/data/protego_day.tar.gz) - 22G
 
