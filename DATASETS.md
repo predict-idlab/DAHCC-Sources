@@ -10,7 +10,6 @@ To accurately assess a call made for help by the person at home, it is important
 In total: 31 "day in life" participants and 12 "night" participants enrolled in this protego study
 
 All data samples and performed activities were semantically mapped onto the DAHCC ontology. The  Knowledge Graph, for each of the 43 participants, can be found here:
-<center>
 
 <table>
     <tr>
