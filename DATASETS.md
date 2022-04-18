@@ -3,11 +3,39 @@ An overview of all DAHCC datasets are provided here.
 
 ## DAHCC Protego
 
-To accurately assess a call made for help by the person at home, it is important to get a good view of the daily activities and lifestyle of the person being monitored at home. Therefore, one of the aims within the [PROTEGO](https://www.imec-int.com/en/research-portfolio/protego)  project was to design algorithms that are able to automatically determine the activity/lifestyle of the monitored person based on the available sensor data in their home, e.g. sensors for location, movement, light, temperature, the use of certain devices, etc. or on the monitored people themselves, e.g. wearables or sensors on smartphone. In addition, a limited number of sensors are also provided for the monitored person to assess their condition, e.g. blood pressure or weight. The data collection is performed in the [c](https://www.ugent.be/ea/idlab/en/research/research-infrastructure/homelab.htm).
+To accurately assess a call made for help by the person at home, it is important to get a good view of the daily activities and lifestyle of the person being monitored at home. Therefore, one of the aims within the [PROTEGO](https://www.imec-int.com/en/research-portfolio/protego)  project was to design algorithms that are able to automatically determine the activity/lifestyle of the monitored person based on the available sensor data in their home, e.g. sensors for location, movement, light, temperature, the use of certain devices, etc. or on the monitored people themselves, e.g. wearables or sensors on smartphone. In addition, a limited number of sensors are also provided for the monitored person to assess their condition, e.g. blood pressure or weight. The data collection is performed in the [IDLab Homelab](https://www.ugent.be/ea/idlab/en/research/research-infrastructure/homelab.htm).
 
 *Two protocols were performed with the study participants, namely a “day in the life” protocol and a “night” protocol. Each protocol starts with the same intake of the participant, which is performed by a researcher of IDLab. Each protocol also ends with the same outtake of the participant performed by a researcher of IDLab.*
 
 In total: 31 "day in life" participants and 12 "night" participants enrolled in this protego study
+
+All data samples and performed activities were semantically mapped onto the DAHCC ontology. The  Knowledge Graph, for each of the 43 participants, can be found here:
+<center>
+
+| user           | data                                                                                       | user                 | data                                                                                       |
+|----------------|--------------------------------------------------------------------------------------------|----------------------|--------------------------------------------------------------------------------------------|
+| participant_1  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant1/kg.nt.gzip)  | participant_22       | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant22/kg.nt.gzip) |
+| participant_2  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant2/kg.nt.gzip)  | participant_23       | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant23/kg.nt.gzip) |
+| participant_3  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant3/kg.nt.gzip)  | participant_24       | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant24/kg.nt.gzip) |
+| participant_4  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant4/kg.nt.gzip)  | participant_25       | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant25/kg.nt.gzip) |
+| participant_5  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant5/kg.nt.gzip)  | participant_26       | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant26/kg.nt.gzip) |
+| participant_6  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant6/kg.nt.gzip)  | participant_27       | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant27/kg.nt.gzip) |
+| participant_7  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant7/kg.nt.gzip)  | participant_28       | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant28/kg.nt.gzip) |
+| participant_8  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant8/kg.nt.gzip)  | participant_29       | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant29/kg.nt.gzip) |
+| participant_9  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant9/kg.nt.gzip)  | participant_30       | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant30/kg.nt.gzip) |
+| participant_10 | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant10/kg.nt.gzip) | participant_31       | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant31/kg.nt.gzip) |
+| participant_11 | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant11/kg.nt.gzip) | participant_1_night  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_1_night/kg.nt.gzip) |
+| participant_12 | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant12/kg.nt.gzip) | participant_2_night  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_2_night/kg.nt.gzip) |
+| participant_13 | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant13/kg.nt.gzip) | participant_3_night  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_3_night/kg.nt.gzip) |
+| participant_14 | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant14/kg.nt.gzip) | participant_4_night  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_4_night/kg.nt.gzip) |
+| participant_15 | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant15/kg.nt.gzip) | participant_5_night  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_5_night/kg.nt.gzip) |
+| participant_16 | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant16/kg.nt.gzip) | participant_6_night  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_6_night/kg.nt.gzip) |
+| participant_17 | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant17/kg.nt.gzip) | participant_8_night  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_7_night/kg.nt.gzip) |
+| participant_18 | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant18/kg.nt.gzip) | participant_9_night  | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_8_night/kg.nt.gzip) |
+| participant_19 | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant19/kg.nt.gzip) | participant_10_night | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_9_night/kg.nt.gzip) |
+| participant_20 | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant20/kg.nt.gzip) | participant_11_night | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_10_night/kg.nt.gzip) |
+| participant_21 | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant21/kg.nt.gzip) | participant_12_night | [kg.nt.gzip](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_11_night/kg.nt.gzip) |
+</center>
 
 ### Homelab
 The IDLab [HomeLab](https://idlab.technology/infrastructure/homelab/) was used for this study. The HomeLab is an 'ordinary' house on the UGent Campus Zwijnaarde, which is equipped with all kinds of sensors and actuators. It allows to test smart home applications in a very realistic environment.
@@ -111,10 +139,8 @@ A web application was designed by IDLab that allows participants to (a) enter th
 
 This was used during the data collection to allow participants to annotate the actions they are performing. For usability purposes, we wrapped this web application inside an android app and ensured that a preloaded set of activities and routines could be loaded from either a prefilled CSV file or directly from the google cloud. Everytime a participant interacted with the application (when the start, end or cancel button was pressed), a timestamp together with the performed action was sent to a log file corresponding to the participants name. This log file was later on analysed to derive the annotations. Participants were also able to insert new activities using a text field in the protego annotator. They could also log some additional information, such as unexpected application crashes, or problems with some of the appliances inside the homelab.
 
-  
-![](https://lh4.googleusercontent.com/xsMMihGrMlHP4jgxX-LwyzY9aO7wh3mkXP-ConYbfEgTCsJnq2MXmnR-_z-C8L0v1WDQFo_A-w_MgsrF4lmFlIvGybRdRUcnY2HlvzpsvplvaauaRuQ9eliGAjeFD14bxq0QJCpv)  ![](https://lh3.googleusercontent.com/PP0nVscaBMZ-91Zy7_CNaC0MkdtmTRae_9gw0zEWnG2hMyWnI8kB5eVilzd_hxKzYFAaW1GqJ5yFRtDdS2eaARpclQgcKOsRZzK8V_yKbe2fG4N8GYgxfMbnQWzINy5lmzN-tGvn)
 
-
+<img src="https://lh4.googleusercontent.com/xsMMihGrMlHP4jgxX-LwyzY9aO7wh3mkXP-ConYbfEgTCsJnq2MXmnR-_z-C8L0v1WDQFo_A-w_MgsrF4lmFlIvGybRdRUcnY2HlvzpsvplvaauaRuQ9eliGAjeFD14bxq0QJCpv" alt="drawing" width="450"/><img src="https://lh3.googleusercontent.com/PP0nVscaBMZ-91Zy7_CNaC0MkdtmTRae_9gw0zEWnG2hMyWnI8kB5eVilzd_hxKzYFAaW1GqJ5yFRtDdS2eaARpclQgcKOsRZzK8V_yKbe2fG4N8GYgxfMbnQWzINy5lmzN-tGvn" alt="drawing" width="450"/>
 
 ### Raw Dataset
 
@@ -153,3 +179,19 @@ This was used during the data collection to allow participants to annotate the a
 | participant_29 | [data.feather](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant29/data.feather) | [labels.csv](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant29/labels.csv) |
 | participant_30 | [data.feather](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant30/data.feather) | [labels.csv](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant30/labels.csv) |
 | participant_31 | [data.feather](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant31/data.feather) | [labels.csv](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant31/labels.csv) |
+
+[Full Protego Night Dataset](https://dahcc.idlab.ugent.be/data/protego_night.tar.gz) - 12G
+
+| user          | data                                                                              | labels                                                                          |
+|---------------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| participant_night_1 | [data.feather](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_1/data.feather) | [labels.csv](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_1/labels.csv) |
+| participant_night_2 | [data.feather](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_2/data.feather) | [labels.csv](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_2/labels.csv) |
+| participant_night_3 | [data.feather](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_3/data.feather) | [labels.csv](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_3/labels.csv) |
+| participant_night_4 | [data.feather](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_4/data.feather) | [labels.csv](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_4/labels.csv) |
+| participant_night_5 | [data.feather](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_5/data.feather) | [labels.csv](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_5/labels.csv) |
+| participant_night_6 | [data.feather](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_6/data.feather) | [labels.csv](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_6/labels.csv) |
+| participant_night_7 | [data.feather](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_7/data.feather) | [labels.csv](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_7/labels.csv) |
+| participant_night_8 | [data.feather](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_8/data.feather) | [labels.csv](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_8/labels.csv) |
+| participant_night_9 | [data.feather](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_9/data.feather) | [labels.csv](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_9/labels.csv) |
+| participant_night_10 | [data.feather](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_10/data.feather) | [labels.csv](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_10/labels.csv) |
+| participant_night_11 | [data.feather](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_11/data.feather) | [labels.csv](https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_night_11/labels.csv) |
