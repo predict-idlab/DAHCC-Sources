@@ -20,129 +20,129 @@ All data samples and performed activities were semantically mapped onto the DAHC
     </tr>
     <tr>
         <td>participant_1</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant1/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant1.nt.gz">kg.nt.gzip</a></td>
         <td>participant_22</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant22/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant22.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_2</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant2/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant2.nt.gz">kg.nt.gzip</a></td>
         <td>participant_23</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant23/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant23.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_3</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant3/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant3.nt.gz">kg.nt.gzip</a></td>
         <td>participant_24</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant24/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant24.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_4</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant4/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant4.nt.gz">kg.nt.gzip</a></td>
         <td>participant_25</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant25/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant25.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_5</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant5/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant5.nt.gz">kg.nt.gzip</a></td>
         <td>participant_26</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant26/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant26.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_6</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant6/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant6.nt.gz">kg.nt.gzip</a></td>
         <td>participant_27</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant27/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant27.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_7</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant7/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant7.nt.gz">kg.nt.gzip</a></td>
         <td>participant_28</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant28/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant28.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_8</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant8/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant8.nt.gz">kg.nt.gzip</a></td>
         <td>participant_29</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant29/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant29.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_9</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant9/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant9.nt.gz">kg.nt.gzip</a></td>
         <td>participant_30</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant30/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant30.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_10</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant10/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant10.nt.gz">kg.nt.gzip</a></td>
         <td>participant_31</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant31/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant31.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_11</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant11/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant11.nt.gz">kg.nt.gzip</a></td>
         <td>participant_1_night</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_1_night/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant_night1.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_12</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant12/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant12.nt.gz">kg.nt.gzip</a></td>
         <td>participant_2_night</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_2_night/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant_night2.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_13</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant13/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant13.nt.gz">kg.nt.gzip</a></td>
         <td>participant_3_night</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_3_night/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant_night3.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_14</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant14/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant14.nt.gz">kg.nt.gzip</a></td>
         <td>participant_4_night</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_4_night/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant_night4.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_15</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant15/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant15.nt.gz">kg.nt.gzip</a></td>
         <td>participant_5_night</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_5_night/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant_night5.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_16</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant16/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant16.nt.gz">kg.nt.gzip</a></td>
         <td>participant_6_night</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_6_night/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant_night6.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_17</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant17/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant17.nt.gz">kg.nt.gzip</a></td>
         <td>participant_8_night</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_7_night/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant_night7.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_18</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant18/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant18.nt.gz">kg.nt.gzip</a></td>
         <td>participant_9_night</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_8_night/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant_night8.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_19</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant19/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant19.nt.gz">kg.nt.gzip</a></td>
         <td>participant_10_night</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_9_night/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant_night9.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_20</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant20/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant20.nt.gz">kg.nt.gzip</a></td>
         <td>participant_11_night</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_10_night/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant_night10.nt.gz">kg.nt.gzip</a></td>
     </tr>
     <tr>
         <td>participant_21</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant21/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant21.nt.gz">kg.nt.gzip</a></td>
         <td>participant_12_night</td>
-        <td><a href="https://dahcc.idlab.ugent.be/data/Protego_anom/_participant_11_night/kg.nt.gzip">kg.nt.gzip</a></td>
+        <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant_night11.nt.gz">kg.nt.gzip</a></td>
     </tr>
 </table>
 
