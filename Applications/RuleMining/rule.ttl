@@ -1,0 +1,91 @@
+@prefix : <http://example.org/> .
+
+RULE :OpenRule
+IF {
+  ?o <https://saref.etsi.org/core/hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+  ?o <https://saref.etsi.org/core/relatesToProperty> <https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.open> .
+  ?o <https://saref.etsi.org/core/measurementMadeBy> ?s .
+  ?s <https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/analyseStateOf> ?u .
+  ?u a <https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/Furniture>.
+}
+THEN {
+    ?o <https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/actsLike> <https://saref.etsi.org/core/OpenCommand> .
+}
+
+RULE :UsageRule
+IF {
+  ?o <https://saref.etsi.org/core/relatesToProperty> <https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/energy.power> .
+  ?o <https://saref.etsi.org/core/hasValue> ?v .
+  ?o <https://saref.etsi.org/core/measurementMadeBy> ?s .
+  ?s <https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/analyseStateOf> ?u .
+  ?u a <https://saref.etsi.org/core/Appliance> .
+  FILTER (?v > 0).
+}
+THEN {
+    ?o <https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/actsLike> <https://saref.etsi.org/core/StartCommand> .
+}
+
+RULE :WaterRule
+IF {
+  ?o <https://saref.etsi.org/core/hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+  ?o <https://saref.etsi.org/core/relatesToProperty> <https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.waterRunning::bool> .
+}
+THEN {
+    ?o <https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/actsLike> <https://saref.etsi.org/core/StartCommand> .
+}
+
+RULE :SteinelLocationRule
+IF {
+  ?o <https://saref.etsi.org/core/hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+  ?o <https://saref.etsi.org/core/relatesToProperty> <https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/people.presence.detected> .
+}
+THEN {
+    ?o <https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/actsLike> <https://saref.etsi.org/core/NotifyCommand> .
+}
+
+RULE :MotionLocationRule
+IF {
+  ?o <https://saref.etsi.org/core/hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+  ?o <https://saref.etsi.org/core/relatesToProperty> <https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.motion> .
+}
+THEN {
+    ?o <https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/actsLike> <https://saref.etsi.org/core/NotifyCommand> .
+}
+
+RULE :LightRuleOn
+IF {
+  ?o <https://saref.etsi.org/core/hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+  ?o <https://saref.etsi.org/core/relatesToProperty> <https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.lightswitch> .
+}
+THEN {
+    ?o <https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/actsLike> <https://saref.etsi.org/core/OnCommand> .
+}
+
+RULE :LightRuleOff
+IF {
+  ?o <https://saref.etsi.org/core/hasValue> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+  ?o <https://saref.etsi.org/core/relatesToProperty> <https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.lightswitch> .
+}
+THEN {
+    ?o <https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/actsLike> <https://saref.etsi.org/core/OffCommand> .
+}
+
+RULE :BlindRuleOn
+IF {
+  ?o <https://saref.etsi.org/core/relatesToProperty> <https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.blind> .
+  ?o <https://saref.etsi.org/core/hasValue> ?v .
+  FILTER (?v > 80).
+}
+THEN {
+    ?o <https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/actsLike> <https://saref.etsi.org/core/CloseCommand> .
+}
+
+RULE :BlindRuleOn
+IF {
+  ?o <https://saref.etsi.org/core/relatesToProperty> <https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.blind> .
+  ?o <https://saref.etsi.org/core/hasValue> ?v .
+  FILTER (?v < 20).
+}
+THEN {
+    ?o <https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/actsLike> <https://saref.etsi.org/core/OpenCommand> .
+}
