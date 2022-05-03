@@ -244,17 +244,14 @@ def _proc(user):
 
 if __name__ == '__main__':
     # get activity labels
-    for file in glob('/Users/bramsteenwinckel/Datasets/Protego_anom/*/labels.csv'):
+    for file in glob('protego/*/labels.csv'):
          main_activity(file)
     # transform data and create new events
-    data = list(glob('/Users/bramsteenwinckel/Datasets/Protego_anom/*/'))
+    data = list(glob('protego/*/'))
     with Pool(6) as pool:
          res = list(tqdm(pool.imap_unordered(_proc, data, chunksize=1), total=len(data)))
          pool.close()
          pool.join()
-
-    # add aditional raw sensor data values
-    for file in tqdm(glob('/Users/bramsteenwinckel/Datasets/Protego_anom/*/sensors/')):
-
+         
     # link activities and events together
     post_process()
