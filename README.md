@@ -5,9 +5,9 @@ Data Analytics in Healht and Connected Care (DAHCC) resembles both the way and t
 
 The DAHCC resource exists out of 3 main components:
 
-* [A large dataset of daily life activities](https://dahcc.idlab.ugent.be/dataset.html), bot provided in raw and knowledge graph format.
-* [The DAHCC Ontology](https://dahcc.idlab.ugent.be/Ontology/ActivityRecognition/) capturing care, patient, daily life activity recogntion and lifestyle domain knwoledge.
-* [Connected Care Applications](https://dahcc.idlab.ugent.be/Applications.html) which shows the potential of combining data with ontological meta-data.
+- [A large dataset of daily life activities](https://dahcc.idlab.ugent.be/dataset.html), bot provided in raw and knowledge graph format.<br>
+- [The DAHCC Ontology](https://dahcc.idlab.ugent.be/Ontology/ActivityRecognition/) capturing care, patient, daily life activity recogntion and lifestyle domain knwoledge.<br>
+- [Connected Care Applications](https://dahcc.idlab.ugent.be/Applications.html) which shows the potential of combining data with ontological meta-data.<br>
 
 # Why DAHCC?
 
