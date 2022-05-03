@@ -7,14 +7,16 @@ In order to build connected care application, we need to get a good view of the 
 All data samples and performed activities were semantically mapped onto the DAHCC ontology. The  Knowledge Graph, for each of the 43 participants, can be found here:
 
 <table>
+    <thead>
     <tr>
-        <td>user</td>
-        <td>data</td>
-        <td>user</td>
-        <td>data</td>
-        <td>user</td>
-        <td>data</td>
+        <th>user</th>
+        <th>data</th>
+        <th>user</th>
+        <th>data</th>
+        <th>user</th>
+        <th>data</th>
     </tr>
+    </thead>
     <tr>
         <td>participant_1</td>
         <td><a href="https://dahcc.idlab.ugent.be/data/data_kg/dataset_participant1.nt.gz">kg.nt.gzip</a></td>
@@ -344,4 +346,6 @@ All data samples and performed activities were semantically mapped onto the DAHC
 <tr>
 </tbody>
 </table>
+
+
 
