@@ -13,8 +13,7 @@ To run this applications:
 1) ExtendedObservations.py - Generate the KG files based on the raw sensor data (or you can directly use the seperated KG files on https://dahcc.idlab.ugent.be/dataset.html)
 and generate new, more advanced observations from them using the rules within rule.ttl. These new observations, together with the transformed activities and full protego DAHCC ontology
 are loaded within the Stardog.
-2) rulemining.py - Create the INK representation for all life style activities within the Stardog database. Split the generated embeddings in a positive and negative set, based on the
-3) activity were you want to learn a rule for. Mine rules and return the result.
+2) rulemining.py - Create the INK representation for all life style activities within the Stardog database. Split the generated embeddings in a positive and negative set, based on the activity were you want to learn a rule for. Mine rules and return the result.
 
 An example of such a mined rule could look like this:
 
