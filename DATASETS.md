@@ -158,7 +158,7 @@ The following rooms were used in the house by the participants:
 -   Master bedroom on the first floor
 -   Hallway on the first floor
 -   Toilet on the first floor
-    
+
 After intake, the garage/office space was used by the supervising IDLAB researcher during the data collection (to not disturb the data collection).
 
 The other rooms in the house were closed off (locked) such that the participants cannot enter them.
@@ -257,7 +257,7 @@ Below a list of contextual sensors is given that are installed in the HomeLab an
 </table>
 
 Some impressions of these sensors installed in the Homelab can be seen in the pictures below.  
-  
+
 
 ![](https://lh6.googleusercontent.com/TsnPQVc1W048Eh6TzcwmiWGNfdIHIiIsbiMMfxtTuESWdygQJRjQDi---t2Q3pcYRUZ0wGOg-HZMsEcB1mZMa8oL48RX7PczkQOQFGchp87k1t4u4AcT5qSTEd6Un_E_lfKLcSkE)
 
@@ -295,12 +295,12 @@ The e4 wristband from [Empatica](https://www.empatica.com/research/e4/) is a wea
 
 The streaming application is an Android application that is installed on the smartphone of the participant if he/she has an Android phone or that is included on the smartphone provided to the participants that do not own an Android phone. Once the streaming application is configured by the researchers at the start of the data collection protocol, the participants only need to minimally interact with the application, namely only to check whether the data collection is still performing correctly or to reconnect the Empatica when Bluetooth connection is lost.
 
-  
+
 The streaming application is used for (a) streaming the data from the Empatica to the data platform, (b) collecting smartphone sensor data and sending it to the data platform
-  
+
 
 ![](https://lh3.googleusercontent.com/0LRQ3jNKfs5Kt8N8GE1-rohn9pqOXsx59PKUdjcej-VKDpHTPXKe-ckSNkjaH7Hit7YfQREmguhO2NZqr_-8HLh6LaArbbI71Zg5Xgl9QjKdyFZFL2H52vKVBGt2j8s3KfSf-KTq)![](https://lh5.googleusercontent.com/ffdDN5C-1vk2PeoOIopYEx7SX54zWFCYWGiIaM_rMbIYx1cwnvdbMTScq54jb_eujRMNN5lXo6WYIUr5oK7pkJn0xJrR3mqbdtfnTVtkcRy3EFKScXZ-zltPHwuklDeoPszKGxS_)  
-  
+
 Concerning the smartphone the following data is collected: location of the smartphone (GPS coordinates), light intensity of the environment of the phone, frequency & amplitude of the noise in the environment measured through the smartphone microphone, acceleration of the smartphone, linear acceleration of the smartphone, values measured by the gyroscope in the smartphone, rotation of the smartphone, gravity applied to the smartphone, strength of the magnetic field around the smartphone, proximity of objects, applications opened by the user on the smartphone, timestamps of interaction with the keyboard of the smartphone by the user (only timestamp, NOT what was typed), adjustments to the status of the screen of the smartphone (on, off, locked, unlocked), number of steps performed by the participant, and the probable start and stop time of the sleep period of the participant (performed with the [Google Sleep API](https://developers.google.com/location-context/sleep)). Some parameters can only be performed by Android phones that have the necessary sensors available and when the smartphone’s operating system is up-to-date.
 
 ### Sleep as Android application
@@ -553,4 +553,3 @@ This was used during the data collection to allow participants to annotate the a
 </tr>
 </tbody>
 </table>
-
