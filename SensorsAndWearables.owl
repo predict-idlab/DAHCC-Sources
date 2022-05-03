@@ -279,6 +279,22 @@
     
 
 
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndWearables/GlucoMeter -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndWearables/GlucoMeter">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4wear/NearBodyWearable"/>
+    </owl:Class>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndWearables/GlucoseLevel -->
+
+    <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndWearables/GlucoseLevel">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4wear/BiometricProperty"/>
+    </owl:Class>
+    
+
+
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndWearables/Gravity -->
 
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndWearables/Gravity">

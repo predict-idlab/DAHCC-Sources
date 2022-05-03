@@ -65,6 +65,12 @@
     
 
 
+    <!-- https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/hasAllergy -->
+
+    <owl:ObjectProperty rdf:about="https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/hasAllergy"/>
+    
+
+
     <!-- https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/hasIndoorLocation -->
 
     <owl:ObjectProperty rdf:about="https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/hasIndoorLocation">
@@ -78,6 +84,15 @@
     <!-- https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/hasLocation -->
 
     <owl:ObjectProperty rdf:about="https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/hasLocation"/>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/hasMentalState -->
+
+    <owl:ObjectProperty rdf:about="https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/hasMentalState">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/saref4ehaw/HealthActor"/>
+        <rdfs:range rdf:resource="https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/MentalState"/>
+    </owl:ObjectProperty>
     
 
 
@@ -123,6 +138,12 @@
         <rdfs:domain rdf:resource="https://saref.etsi.org/saref4ehaw/User"/>
         <rdfs:range rdf:resource="https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/Medication"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/usesCallSystem -->
+
+    <owl:ObjectProperty rdf:about="https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/usesCallSystem"/>
     
 
 
@@ -187,6 +208,12 @@
         <rdfs:domain rdf:resource="https://saref.etsi.org/saref4ehaw/HealthActor"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/fullname -->
+
+    <owl:DatatypeProperty rdf:about="https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/fullname"/>
     
 
 
