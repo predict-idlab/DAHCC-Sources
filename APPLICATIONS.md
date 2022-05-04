@@ -1,5 +1,5 @@
 
-<div class="card">
+<div class="card" onclick="location.href='https://github.com/predict-idlab/DAHCC-Sources/tree/main/Applications/RuleMining'>
   <img src="https://dahcc.idlab.ugent.be/data_mining.jpg" width="750"/>
   <div class="container">
     <h4><b>Semantic Rule Mining</b></h4> 
@@ -7,7 +7,7 @@
   </div>
 </div>
 
-<div class="card">
+<div class="card" onclick="location.href='https://github.com/predict-idlab/DAHCC-Sources/tree/main/Applications/StreamReasoning'>
   <img src="https://dahcc.idlab.ugent.be/stream_reasoning.jpg" width="750" height="400"/>
   <div class="container">
     <h4><b>Semantic Stream Reasoning</b></h4> 
