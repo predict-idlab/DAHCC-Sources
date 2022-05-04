@@ -22,11 +22,11 @@ The DAHCC ontology allows to capture the metadata about the sensors and data, th
 If you use the DAHCC in a scholarly article, we would appreciate a citation:
 
 ```
-@misc{dahccontology, \n
+@misc{dahccontology,
   author    = {{Bram Steenwinckel, Mathias De Brouwer, Marija Stojchevska, Jeroen Van Der Donckt, Jelle Nelis, Joeri Ruyssinck, Joachim 
-                  van der Herten, Koen Casier, Jan Van Ooteghem, Pieter Crombez, Filip De Turck, Sofie Van Hoecke and Femke Ongenae}}, \n
-  title     = {{Data Analytics For Health and Connected Care: Ontology, Knowledge Graph and Applications}}, \n
-  year      = {2022}, <br>
-  url       = {https://dahcc.idlab.ugent.be} \n
+                  van der Herten, Koen Casier, Jan Van Ooteghem, Pieter Crombez, Filip De Turck, Sofie Van Hoecke and Femke Ongenae}},
+  title     = {{Data Analytics For Health and Connected Care: Ontology, Knowledge Graph and Applications}},
+  year      = {2022},
+  url       = {https://dahcc.idlab.ugent.be}
 }
 ```
