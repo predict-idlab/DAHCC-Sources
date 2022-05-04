@@ -1,0 +1,17 @@
+version: "3.0"
+
+services:
+  stream-processor:
+    image: local/stream-processor:latest
+    restart: always
+    env_file:
+      - activity-detection.env
+    ports:
+      - ${HOMELAB_RSP_ENGINE_PORT}:${HOMELAB_RSP_ENGINE_PORT}
+      - ${HOMELAB_RSP_ENGINE_STREAM_WS_PORT}:${HOMELAB_RSP_ENGINE_STREAM_WS_PORT}
+    logging:
+      options:
+        max-file: "10"
+        max-size: "100m"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

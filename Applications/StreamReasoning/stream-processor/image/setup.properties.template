@@ -1,0 +1,20 @@
+# server properties
+rsp_server.port=$HOMELAB_RSP_ENGINE_PORT
+
+# WebSocket server properties
+rsp_server.stream.ws=true
+rsp_server.stream.ws.port=$HOMELAB_RSP_ENGINE_STREAM_WS_PORT
+
+# RSP engine properties
+rsp_engine.output_format=N-TRIPLE
+rsp_engine.enable_timestamp_function=true
+rsp_engine.send_empty_results=false
+
+# inference (default reasoner is RDFS)
+rsp_engine.enable_inference=false
+
+# observers
+rsp_engine.back_loop=false
+rsp_engine.ws_observer=false
+
+rsp_engine.log_events=$HOMELAB_LOG_STREAM_EVENTS

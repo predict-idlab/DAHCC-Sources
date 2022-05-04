@@ -1,0 +1,31 @@
+PREFIX ActivityRecognition: <https://dahcc.idlab.ugent.be/Ontology/ActivityRecognition/>
+PREFIX KBActivityRecognition: <https://dahcc.idlab.ugent.be/Ontology/ActivityRecognition/KBActivityRecognition/>
+PREFIX saref-core: <https://saref.etsi.org/core/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+    _:p a KBActivityRecognition:RoutineActivityPrediction ;
+        ActivityRecognition:forActivity [ a <https://dahcc.idlab.ugent.be/Ontology/ActivityRecognition/Showering> ] ;
+        ActivityRecognition:activityPredictionMadeFor <http://protego.ilabt.imec.be/idlab.homelab/patients/patient157> ;
+        ActivityRecognition:predictedBy
+            <https://dahcc.idlab.ugent.be/Ontology/ActivityRecognition/KBActivityRecognition/KBActivityRecognitionModel> ;
+        saref-core:hasTimestamp ?now .
+}
+FROM STREAM <http://protego.ilabt.imec.be/idlab.homelab> [RANGE 30s STEP 10s]
+WHERE {
+    BIND (NOW() as ?now)
+    <https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/70:ee:50:67:3e:78> saref-core:makesMeasurement [
+        saref-core:hasValue ?v ;
+        saref-core:hasTimestamp ?t ;
+        saref-core:relatesToProperty
+            <https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.common.RelativeHumidity>
+    ] .
+    FILTER (xsd:float(?v) > xsd:float("58"^^xsd:float))
+
+    <https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/AQURA_10_10_145_9.Tag> saref-core:makesMeasurement [
+        saref-core:hasValue ?location
+    ] .
+    FILTER (?location = "Badkamer boven"^^xsd:string)
+}
+ORDER BY DESC(?t)
+LIMIT 1
