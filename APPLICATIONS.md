@@ -1,3 +1,10 @@
+<div class="card" onclick="location.href='https://github.com/predict-idlab/DAHCC-Sources/tree/main/Applications/EventGeneration'">
+  <img src="https://dahcc.idlab.ugent.be/event_generation.jpg" width="750"/>
+  <div class="container">
+    <h4><b>Higher-order Event Generation</b></h4> 
+    <p>Application which transforms raw data into higher-order semantic events, using both a mapping towards the DAHCC ontology of the sensor observations and a reasoning component to combine the observations into semantic events. All sources and a brief description on how to run this application can be found  <a href="https://github.com/predict-idlab/DAHCC-Sources/tree/main/Applications/EventGeneration">here</a></p> 
+  </div>
+</div>
 
 <div class="card" onclick="location.href='https://github.com/predict-idlab/DAHCC-Sources/tree/main/Applications/RuleMining'">
   <img src="https://dahcc.idlab.ugent.be/data_mining.jpg" width="750"/>
