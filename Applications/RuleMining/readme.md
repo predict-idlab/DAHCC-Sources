@@ -5,14 +5,12 @@ Here, we try to mine a general rule for one or more performed life style activit
 This section describes how you can run this application and what will be the expected outcome.
 
 To make sure you can run this application, the following software must be installed:
-- [Stardog](https://www.stardog.com) is being used as a triple store inside this application, make sure you run a local copy of it before executing the python scripts
-- [INK](https://github.com/IBCNServices/INK) is used to transform the generated knowledge graph into an interpretable embedding (which is later on being used to mine rules)
+- [EventGeneration](https://github.com/predict-idlab/DAHCC-Sources/tree/main/Applications/EventGeneration) application.
+- [INK](https://github.com/IBCNServices/INK) is used to transform the generated knowledge graph into an interpretable embedding (which is later on being used to mine rules).
 - [Skope-rules](https://github.com/scikit-learn-contrib/skope-rules) is being used to mine the corresponding rules.
 
 To run this applications:
-1) ExtendedObservations.py - Generate the KG files based on the raw sensor data (or you can directly use the seperated KG files on https://dahcc.idlab.ugent.be/dataset.html)
-and generate new, more advanced observations from them using the rules within rule.ttl. These new observations, together with the transformed activities and full protego DAHCC ontology
-are loaded within the Stardog.
+1) Generate advanced events based on the EventGeneration application. We will use these generated events to mine interesting rules given the life-style activity label.
 2) rulemining.py - Create the INK representation for all life style activities within the Stardog database. Split the generated embeddings in a positive and negative set, based on the activity were you want to learn a rule for. Mine rules and return the result.
 
 An example of such a mined rule could look like this:
