@@ -1,4 +1,4 @@
-### Guide to run the semantic rule mining applications
+### Guide to run the generation of higer-order events
 
 A higher-order semantic event creation application was designed to transform the raw data samples within the DAHCC protego dataset into more advanced semantic events.
 A combination of mapping the raw observations to semantic data and a reasoning engine was used to define those higer-order events.
