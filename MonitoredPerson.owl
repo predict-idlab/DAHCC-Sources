@@ -14,7 +14,7 @@
         <owl:imports rdf:resource="https://saref.etsi.org/saref4bldg/v1.1.2/"/>
         <owl:imports rdf:resource="https://saref.etsi.org/saref4ehaw/v1.1.1/"/>
         <dc:creator>Bram Steenwinckel, Mathias De Brouwer, Femke Ongenae</dc:creator>
-        <terms:license>MIT License</terms:license>
+        <terms:license>&quot;MIT License&quot;</terms:license>
         <terms:publisher>IDLab - imec - Ghent University</terms:publisher>
         <rdfs:comment>This ontology describes the different concepts used within the DAHCC ontology to describe a person/patient, monitored inside its resident.</rdfs:comment>
         <rdfs:label>The DAHCC Monitored Person Ontology</rdfs:label>

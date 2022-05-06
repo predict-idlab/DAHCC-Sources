@@ -16,7 +16,7 @@
         <owl:imports rdf:resource="https://saref.etsi.org/saref4bldg/v1.1.2/"/>
         <dc:creator>Bram Steenwinckel, Mathias De Brouwer, Femke Ongenae</dc:creator>
         <dc:publisher>IDLab - imec - Ghent University</dc:publisher>
-        <terms:license>MIT License</terms:license>
+        <terms:license>&quot;MIT License&quot;</terms:license>
         <rdfs:comment>This ontology describes the different concepts used within the DAHCC ontology to link static sensors and actuators to their corresponding properties and locations.
 
 This ontology uses both the saref core and saref4building ontologies as upper ontologies to define most of the concepts and adds additional classes and object properties to differentiate within the digital health space.</rdfs:comment>
