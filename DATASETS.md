@@ -4,8 +4,8 @@ In order to build connected care application, we need to get a good view of the 
 
 ## KG data
 
-All data samples and performed activities were semantically mapped onto the DAHCC ontology. The  Knowledge Graph, for each of the 43 participants, can be found here:
-[Full Protego KG](https://dahcc.idlab.ugent.be/data/full_kg.tar.gz) - 22G
+All Homelab data samples and performed activities were semantically mapped onto the DAHCC ontology. The  Knowledge Graph, for each of the 43 participants, can be found here:
+[DAHCC KG](https://dahcc.idlab.ugent.be/data/full_kg.tar.gz) - 0.65G
 <table>
     <thead>
     <tr>
@@ -282,7 +282,7 @@ All data samples and performed activities were semantically mapped onto the DAHC
 </tr>
 </tbody>
 </table>
-<p><a href="https://dahcc.idlab.ugent.be/data/protego_night.tar.gz">Full Protego Night Dataset</a> - 12G</p>
+<p><a href="https://dahcc.idlab.ugent.be/data/protego_night.tar.gz">Full Protego Night Dataset</a> - 6.5G</p>
 <table>
 <thead>
 <tr>
