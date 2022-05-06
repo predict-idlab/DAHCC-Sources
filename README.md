@@ -17,9 +17,10 @@ However, to enable easy re-use of AI algorithms and applications trained and des
 
 The DAHCC ontology allows to capture the metadata about the sensors and data, the different designed AI algorithms and the health insights they derive and how this is correlated to the medical condition of the patients. By providing this uniform metadata, applications can be more easily integrated in large care systems.
 
-
 # Referencing
-If you use the DAHCC in a scholarly article, we would appreciate a citation:
+The ontology, the datasets, the KG and the applications are all made open-source under an [MIT license](https://github.com/predict-idlab/DAHCC-Sources/blob/main/LICENSE).
+
+If you use DAHCC in a scholarly article, we would appreciate a citation:
 
 ```
 @misc{dahcc_resource,
