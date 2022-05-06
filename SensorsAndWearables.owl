@@ -16,6 +16,7 @@
         <owl:imports rdf:resource="https://saref.etsi.org/core/v3.1.1/"/>
         <owl:imports rdf:resource="https://saref.etsi.org/saref4wear/v1.1.1/"/>
         <terms:creator>Bram Steenwinckel, Mathias De Brouwer, Femke Ongenae</terms:creator>
+        <terms:license>MIT License</terms:license>
         <terms:publisher>IDLab - imec - Ghent University</terms:publisher>
         <rdfs:comment>This ontology describes the different concepts used within the DAHCC ontology to link wearables and wearables sensors to their corresponding properties and sensing abilities.</rdfs:comment>
         <rdfs:label>The DAHCC Sensors and Wearable Ontology</rdfs:label>

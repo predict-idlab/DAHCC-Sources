@@ -16,6 +16,7 @@
         <owl:imports rdf:resource="https://saref.etsi.org/saref4ehaw/v1.1.1/"/>
         <owl:imports rdf:resource="https://w3id.org/eep"/>
         <dc:creator>Bram Steenwinckel, Mathias De Brouwer, Femke Ongenae</dc:creator>
+        <terms:license>MIT License</terms:license>
         <terms:publisher>IDLab - imec- Ghent University</terms:publisher>
         <rdfs:comment>This Ontology descirbes the different concepts within the DAHCC ontology to link human activities and postures together with activity recognition concepts.</rdfs:comment>
         <rdfs:label>The DAHCC Activity Recognition Ontology</rdfs:label>

@@ -16,16 +16,17 @@
         <owl:imports rdf:resource="https://saref.etsi.org/saref4bldg/v1.1.2/"/>
         <dc:creator>Bram Steenwinckel, Mathias De Brouwer, Femke Ongenae</dc:creator>
         <dc:publisher>IDLab - imec - Ghent University</dc:publisher>
+        <terms:license>MIT License</terms:license>
         <rdfs:comment>This ontology describes the different concepts used within the DAHCC ontology to link static sensors and actuators to their corresponding properties and locations.
 
 This ontology uses both the saref core and saref4building ontologies as upper ontologies to define most of the concepts and adds additional classes and object properties to differentiate within the digital health space.</rdfs:comment>
         <rdfs:label>The DAHCC Sensors and Actuators Ontology</rdfs:label>
         <owl:versionInfo>0.0.1</owl:versionInfo>
     </owl:Ontology>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -33,88 +34,88 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-
+    
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-
+    
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-
+    
 
 
     <!-- http://www.w3.org/ns/prov#hadPrimarySource -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#hadPrimarySource"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -122,7 +123,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/Sensors/isRelevantTo -->
@@ -133,22 +134,22 @@ This ontology uses both the saref core and saref4building ontologies as upper on
             <rdf:Description rdf:about="https://saref.etsi.org/saref4bldg/isContainedIn"/>
         </owl:propertyChainAxiom>
     </rdf:Description>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/isLocatedNear -->
 
     <owl:ObjectProperty rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/isLocatedNear"/>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/stateAnalysedBy -->
 
     <owl:ObjectProperty rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/stateAnalysedBy"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -156,7 +157,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/AtmosphericPressure -->
@@ -164,7 +165,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/AtmosphericPressure">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Pressure"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BathRoom -->
@@ -172,7 +173,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BathRoom">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BedRoom -->
@@ -180,7 +181,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BedRoom">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Blind -->
@@ -188,7 +189,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Blind">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BrownGoods -->
@@ -196,7 +197,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BrownGoods">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Appliance"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Button -->
@@ -204,7 +205,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Button">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/CO2 -->
@@ -212,7 +213,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/CO2">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/CO2Sensor -->
@@ -220,7 +221,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/CO2Sensor">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/CoffeeMaker -->
@@ -228,7 +229,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/CoffeeMaker">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BrownGoods"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Computer -->
@@ -236,7 +237,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Computer">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BrownGoods"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/ContactSensor -->
@@ -244,7 +245,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/ContactSensor">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/DeepFreezer -->
@@ -252,7 +253,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/DeepFreezer">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Dimmer -->
@@ -260,7 +261,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Dimmer">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/DinningRoom -->
@@ -268,7 +269,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/DinningRoom">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Dishwasher -->
@@ -276,7 +277,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Dishwasher">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/DoorSensor -->
@@ -284,7 +285,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/DoorSensor">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/ContactSensor"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/ElectricalCooker -->
@@ -292,7 +293,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/ElectricalCooker">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/ElectricityMeter -->
@@ -300,7 +301,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/ElectricityMeter">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Meter"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnergyConsumption -->
@@ -308,7 +309,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnergyConsumption">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState -->
@@ -316,7 +317,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Floor -->
@@ -324,7 +325,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Floor">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/BuildingSpace"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Fridge -->
@@ -332,7 +333,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Fridge">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Garage -->
@@ -340,7 +341,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Garage">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/BuildingSpace"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Garden -->
@@ -348,7 +349,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Garden">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/BuildingSpace"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Humidity -->
@@ -356,7 +357,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Humidity">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/HumiditySensor -->
@@ -364,7 +365,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/HumiditySensor">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/IndoorTemperature -->
@@ -372,7 +373,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/IndoorTemperature">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Temperature"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Kitchen -->
@@ -380,7 +381,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Kitchen">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Light -->
@@ -388,7 +389,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Light">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LightSensor -->
@@ -396,7 +397,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LightSensor">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LightSwitch -->
@@ -404,7 +405,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LightSwitch">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LivingRoom -->
@@ -412,7 +413,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LivingRoom">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Localisation -->
@@ -420,7 +421,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Localisation">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Loudness -->
@@ -428,7 +429,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Loudness">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Noise"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LoudnessSensor -->
@@ -436,7 +437,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/LoudnessSensor">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Microwave -->
@@ -444,7 +445,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Microwave">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Motion -->
@@ -452,7 +453,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Motion">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/MovementSensor -->
@@ -460,7 +461,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/MovementSensor">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Noise -->
@@ -468,7 +469,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Noise">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/OutdoorTemperaturee -->
@@ -476,7 +477,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/OutdoorTemperaturee">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Temperature"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Oven -->
@@ -484,7 +485,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Oven">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PeopleNumber -->
@@ -492,7 +493,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PeopleNumber">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Presence"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PeoplePresencee -->
@@ -500,7 +501,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PeoplePresencee">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Presence"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Positioning -->
@@ -508,7 +509,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Positioning">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Power -->
@@ -516,7 +517,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Power">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Presence -->
@@ -524,7 +525,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Presence">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PresenceSensor -->
@@ -532,7 +533,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PresenceSensor">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/MovementSensor"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Pressure -->
@@ -540,7 +541,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Pressure">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PressureSensor -->
@@ -548,7 +549,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/PressureSensor">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Radio -->
@@ -556,7 +557,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Radio">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BrownGoods"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/RainRate -->
@@ -564,7 +565,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/RainRate">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Weather"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/RainrateSensor -->
@@ -572,7 +573,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/RainrateSensor">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/RelativeHumidity -->
@@ -580,7 +581,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/RelativeHumidity">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Humidity"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Relay -->
@@ -588,7 +589,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Relay">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/EnvironmentalState"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room -->
@@ -596,7 +597,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/BuildingSpace"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Socket -->
@@ -604,7 +605,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Socket">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Device"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/StorageRoom -->
@@ -612,7 +613,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/StorageRoom">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Temperature -->
@@ -620,7 +621,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Temperature">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/TemperatureSensor -->
@@ -628,7 +629,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/TemperatureSensor">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/TemperatureSensor"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Toilet -->
@@ -636,7 +637,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Toilet">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Room"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Tv -->
@@ -644,7 +645,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Tv">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BrownGoods"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/VOC -->
@@ -652,7 +653,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/VOC">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/VOCSensor -->
@@ -660,7 +661,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/VOCSensor">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/VentilationLevel -->
@@ -668,7 +669,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/VentilationLevel">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WashingMachine -->
@@ -676,7 +677,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WashingMachine">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WaterBoiler -->
@@ -684,7 +685,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WaterBoiler">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/BrownGoods"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WaterRunning -->
@@ -692,7 +693,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WaterRunning">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WaterRunningSensor -->
@@ -700,7 +701,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WaterRunningSensor">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Weather -->
@@ -708,7 +709,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Weather">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods -->
@@ -716,7 +717,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WhiteGoods">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Appliance"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WindSpeed -->
@@ -724,7 +725,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WindSpeed">
         <rdfs:subClassOf rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Weather"/>
     </owl:Class>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WindSpeedSensor -->
@@ -732,7 +733,7 @@ This ontology uses both the saref core and saref4building ontologies as upper on
     <owl:Class rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/WindSpeedSensor">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
     </owl:Class>
-
+    
 
 
     <!-- https://saref.etsi.org/saref4bldg/Pump -->
@@ -745,3 +746,4 @@ This ontology uses both the saref core and saref4building ontologies as upper on
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

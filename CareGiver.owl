@@ -10,6 +10,12 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://dahcc.idlab.ugent.be/Ontology/CareGiver/">
         <owl:imports rdf:resource="https://saref.etsi.org/saref4ehaw/v1.1.1/"/>
+        <terms:creator>Bram Steenwinckel, Mathias De Brouwer, Femke Ongenae</terms:creator>
+        <terms:license>MIT License</terms:license>
+        <terms:publisher>IDLab - imec - Ghent University</terms:publisher>
+        <rdfs:comment>This Ontology describes the different concepts within the DAHCC ontology to link care and call operations to those who monitor them.</rdfs:comment>
+        <rdfs:label>The DAHCC Caregiver Ontology</rdfs:label>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
     </owl:Ontology>
     
 
