@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/" uri="file:/Users/bramsteenwinckel/Documents/repos/DAHCC-Ontology/SensorsAndActuators.owl"/>
+    <uri id="User Entered Import Resolution" name="https://dahcc.idlab.ugent.be/Ontology/Sensors/" uri="file:/Users/bramsteenwinckel/Documents/repos/DAHCC-Ontology/Sensors.owl"/>
+    <uri id="User Entered Import Resolution" name="https://dahcc.idlab.ugent.be/Ontology/SensorsAndWearables/" uri="file:/Users/bramsteenwinckel/Documents/repos/DAHCC-Ontology/SensorsAndWearables.owl"/>
+    <uri id="User Entered Import Resolution" name="https://dahcc.idlab.ugent.be/Ontology/MonitoredPerson/" uri="file:/Users/bramsteenwinckel/Documents/repos/DAHCC-Ontology/MonitoredPerson.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.bioontology.org/ontology/DIAB/" uri="file:/Users/bramsteenwinckel/Documents/repos/DAHCC-Ontology/imports/DIAB_v90rb.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1650447562513" name="http://www.semanticweb.org/bramsteenwinckel/ontologies/2021/11/untitled-ontology-418" uri="_DashboardBridge.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1650447562513" name="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/" uri="_Homelab.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1650447562513" name="https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/" uri="_HomelabWearable.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1650447562513" name="https://dahcc.idlab.ugent.be/Protego/MonitoredPerson" uri="_exampleUser.owl"/>
+    </group>
+</catalog>

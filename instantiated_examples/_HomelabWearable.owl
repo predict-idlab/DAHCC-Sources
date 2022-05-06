@@ -28,6 +28,29 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/Sensors/analyseStateOf -->
+
+    <owl:AnnotationProperty rdf:about="https://dahcc.idlab.ugent.be/Ontology/Sensors/analyseStateOf"/>
+    
+
+
+    <!-- https://saref.etsi.org/core/consistsOf -->
+
+    <owl:AnnotationProperty rdf:about="https://saref.etsi.org/core/consistsOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -1563,6 +1586,15 @@
     
 
 
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.GlucoseLevel -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.GlucoseLevel">
+        <rdf:type rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndWearables/GlucoseLevel"/>
+        <core:measuresProperty rdf:resource="https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.GlucoseLevel"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.HeartRate -->
 
     <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.HeartRate">
@@ -2444,6 +2476,25 @@
 
     <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/2C:AB:33:21:75:AD/service0010">
         <rdf:type rdf:resource="https://saref.etsi.org/saref4wear/Wearable"/>
+        <core:measuresProperty rdf:resource="https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.GlucoseLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/60:77:71:7D:93:D7/service0009 -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/60:77:71:7D:93:D7/service0009">
+        <rdf:type rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndWearables/GlucoMeter"/>
+        <core:measuresProperty rdf:resource="https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.GlucoseLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/B0:91:22:FB:D0:78/service0009 -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/B0:91:22:FB:D0:78/service0009">
+        <rdf:type rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndWearables/GlucoMeter"/>
+        <core:measuresProperty rdf:resource="https://dahcc.idlab.ugent.be/Homelab/SensorsAndWearables/org.dyamand.types.health.GlucoseLevel"/>
     </owl:NamedIndividual>
     
 
