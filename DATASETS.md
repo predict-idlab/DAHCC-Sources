@@ -5,6 +5,7 @@ In order to build a connected care application, we need to get a good view of th
 ## KG data
 
 All Homelab data samples and performed activities were semantically mapped onto the DAHCC ontology. The  Knowledge Graph, for each of the 43 participants, can be found here:
+
 [DAHCC KG](https://dahcc.idlab.ugent.be/data/full_kg.tar.gz) - 0.65G
 <table>
     <thead>
