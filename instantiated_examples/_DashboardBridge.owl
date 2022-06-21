@@ -477,6 +477,14 @@
     <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.health.DiastolicBloodPressure">
         <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#diastolicBloodPressure"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.health.GlucoseLevel -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.health.GlucoseLevel">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#glucoseLevel"/>
+    </owl:NamedIndividual>
 
 
 
