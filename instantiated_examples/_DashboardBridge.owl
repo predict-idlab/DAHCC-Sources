@@ -1,11 +1,13 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/bramsteenwinckel/ontologies/2021/11/untitled-ontology-418#"
      xml:base="http://www.semanticweb.org/bramsteenwinckel/ontologies/2021/11/untitled-ontology-418"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
@@ -14,6 +16,8 @@
      xmlns:dashboard="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/dashboard#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/bramsteenwinckel/ontologies/2021/11/untitled-ontology-418">
         <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <owl:imports rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/"/>
+        <owl:imports rdf:resource="https://dahcc.idlab.ugent.be/Ontology/SensorsAndWearables/"/>
     </owl:Ontology>
 
 
@@ -29,17 +33,17 @@
 
 
 
-    <!-- https://docs.dynamicdashboard.ilabt.imec.be/ontologies/dashboard#produces -->
-
-    <owl:ObjectProperty rdf:about="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/dashboard#produces"/>
-
-
-
     <!-- http://www.w3.org/ns/sosa/observes -->
 
     <rdf:Description rdf:about="http://www.w3.org/ns/sosa/observes">
         <owl:equivalentProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
     </rdf:Description>
+
+
+
+    <!-- https://docs.dynamicdashboard.ilabt.imec.be/ontologies/dashboard#produces -->
+
+    <owl:ObjectProperty rdf:about="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/dashboard#produces"/>
 
 
 
@@ -108,6 +112,374 @@
 
 
 
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.health.SpO2 -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.health.SpO2">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#oxygenSaturation"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/airquality.co2 -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/airquality.co2">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#co2"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/energy.consumption -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/energy.consumption">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#powerConsumption"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.blind -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.blind">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#blinds"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.button -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.button">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#buttonPressed"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.dimmer -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.dimmer">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#dimmer"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.light -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.light">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#lightLevel"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.lightswitch -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.lightswitch">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#lightSwitch"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.motion -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.motion">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#motionDetected"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.relativehumidity -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.relativehumidity">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#relativeHumidity"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.relay -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.relay">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#relay"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.temperature -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.temperature">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#celsiusTemperature"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.voltage -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.voltage">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#voltage"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.airquality.CO2 -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.airquality.CO2">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#co2"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.common.Load -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.common.Load">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#scale"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.common.Loudness -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.common.Loudness">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#loudness"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.common.RelativeHumidity -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.common.RelativeHumidity">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#relativeHumidity"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.common.Temperature -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.common.Temperature">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#celsiusTemperature"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.health.DiastolicBloodPressure -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.health.DiastolicBloodPressure">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#diastolicBloodPressure"/>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.health.GlucoseLevel -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.health.GlucoseLevel">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#glucoseLevel"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.health.HeartRate -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.health.HeartRate">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#heartRate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.health.SystolicBloodPressure -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.health.SystolicBloodPressure">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#systolicBloodPressure"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/people.presence.numberDetected -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/people.presence.numberDetected">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#numberOfPeopleDetected"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/weather.rainrate -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/weather.rainrate">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#rainRate"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/weather.windspeed -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/weather.windspeed">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#windSpeed"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.waterRunning::bool -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/environment.waterRunning::bool">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#waterRunning"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.acceleration.x -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.acceleration.x">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#accelerationX"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.acceleration.y -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.acceleration.y">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#accelerationY"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.acceleration.z -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.acceleration.z">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#accelerationZ"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.ambient_light -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.ambient_light">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#lightLevel"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gravity.x -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gravity.x">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gravityX"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gravity.y -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gravity.y">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gravityY"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gravity.z -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gravity.z">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gravityZ"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gyroscope.x -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gyroscope.x">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gyroscopeX"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gyroscope.z -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gyroscope.z">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gyroscopeZ"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.linear_acceleration.x -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.linear_acceleration.x">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#linearAccelerationX"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.linear_acceleration.y -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.linear_acceleration.y">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#linearAccelerationY"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.linear_acceleration.z -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.linear_acceleration.z">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#linearAccelerationZ"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.location.latitude -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.location.latitude">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#latitude"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.location.longitude -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.location.longitude">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#longitude"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.rotation.x -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.rotation.x">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#rotationX"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.rotation.y -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.rotation.y">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#rotationY"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.rotation.z -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.rotation.z">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#rotationZ"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/wearable.acceleration.x -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/wearable.acceleration.x">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#accelerationX"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/wearable.acceleration.y -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/wearable.acceleration.y">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#accelerationY"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/wearable.acceleration.z -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/wearable.acceleration.z">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#accelerationZ"/>
+    </owl:NamedIndividual>
+
+
+
     <!-- https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#accelerationX -->
 
     <owl:NamedIndividual rdf:about="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#accelerationX"/>
@@ -165,8 +537,7 @@
     <!-- https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gravityX -->
 
     <owl:NamedIndividual rdf:about="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gravityX"/>
-
-
+    
 
     <!-- https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gravityY -->
 
@@ -333,374 +704,6 @@
     <!-- https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#windSpeed -->
 
     <owl:NamedIndividual rdf:about="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#windSpeed"/>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/airquality.co2 -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/airquality.co2">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#co2"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/energy.consumption -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/energy.consumption">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#powerConsumption"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.blind -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.blind">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#blinds"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.button -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.button">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#buttonPressed"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.dimmer -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.dimmer">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#dimmer"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.light -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.light">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#lightLevel"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.lightswitch -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.lightswitch">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#lightSwitch"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.motion -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.motion">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#motionDetected"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.relativehumidity -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.relativehumidity">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#relativeHumidity"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.relay -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.relay">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#relay"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.temperature -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.temperature">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#celsiusTemperature"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.voltage -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.voltage">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#voltage"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.airquality.CO2 -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.airquality.CO2">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#co2"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.common.Load -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.common.Load">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#scale"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.common.Loudness -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.common.Loudness">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#loudness"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.common.RelativeHumidity -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.common.RelativeHumidity">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#relativeHumidity"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.common.Temperature -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.common.Temperature">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#celsiusTemperature"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.health.DiastolicBloodPressure -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.health.DiastolicBloodPressure">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#diastolicBloodPressure"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.health.GlucoseLevel -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.health.GlucoseLevel">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#glucoseLevel"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.health.HeartRate -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.health.HeartRate">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#heartRate"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.health.SpO2 -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.health.SpO2">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#oxygenSaturation"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.health.SystolicBloodPressure -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/org.dyamand.types.health.SystolicBloodPressure">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#systolicBloodPressure"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/people.presence.numberDetected -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/people.presence.numberDetected">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#numberOfPeopleDetected"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/weather.rainrate -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/weather.rainrate">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#rainRate"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/weather.windspeed -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/weather.windspeed">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#windSpeed"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.waterRunning::bool -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuators/Homelab/environment.waterRunning::bool">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#waterRunning"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.acceleration.x -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.acceleration.x">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#accelerationX"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.acceleration.y -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.acceleration.y">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#accelerationY"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.acceleration.z -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.acceleration.z">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#accelerationZ"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.ambient_light -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.ambient_light">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#lightLevel"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gravity.x -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gravity.x">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gravityX"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gravity.y -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gravity.y">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gravityY"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gravity.z -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gravity.z">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gravityZ"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gyroscope.x -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gyroscope.x">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gyroscopeX"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gyroscope.z -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.gyroscope.z">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gyroscopeZ"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.linear_acceleration.x -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.linear_acceleration.x">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#linearAccelerationX"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.linear_acceleration.y -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.linear_acceleration.y">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#linearAccelerationY"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.linear_acceleration.z -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.linear_acceleration.z">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#linearAccelerationZ"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.location.latitude -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.location.latitude">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#latitude"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.location.longitude -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.location.longitude">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#longitude"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.rotation.x -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.rotation.x">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#rotationX"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.rotation.y -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.rotation.y">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#rotationY"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.rotation.z -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/smartphone.rotation.z">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#rotationZ"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/wearable.acceleration.x -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/wearable.acceleration.x">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#accelerationX"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/wearable.acceleration.y -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/wearable.acceleration.y">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#accelerationY"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/wearable.acceleration.z -->
-
-    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Ontology/SensorsAndActuatorsWearable/Homelab/wearable.acceleration.z">
-        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#accelerationZ"/>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 
