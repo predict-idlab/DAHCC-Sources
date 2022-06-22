@@ -261,6 +261,14 @@
     <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.health.DiastolicBloodPressure">
         <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#diastolicBloodPressure"/>
     </owl:NamedIndividual>
+    
+    
+    
+    <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.health.GlucoseLevel -->
+
+    <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.health.GlucoseLevel">
+        <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#glucoseLevel"/>
+    </owl:NamedIndividual>
 
 
 
@@ -269,7 +277,7 @@
     <owl:NamedIndividual rdf:about="https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.health.HeartRate">
         <dashboard:produces rdf:resource="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#heartRate"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- https://dahcc.idlab.ugent.be/Homelab/SensorsAndActuators/org.dyamand.types.health.SystolicBloodPressure -->
@@ -529,8 +537,7 @@
     <!-- https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gravityX -->
 
     <owl:NamedIndividual rdf:about="https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gravityX"/>
-
-
+    
 
     <!-- https://docs.dynamicdashboard.ilabt.imec.be/ontologies/metrics#gravityY -->
 
